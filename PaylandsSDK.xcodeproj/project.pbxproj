@@ -1,0 +1,1151 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE166B512421255000B75D53 /* PaylandsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE166B472421255000B75D53 /* PaylandsSDK.framework */; };
+		AE166B562421255000B75D53 /* PaylandsSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE166B552421255000B75D53 /* PaylandsSDKTests.swift */; };
+		AE166B582421255000B75D53 /* PaylandsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AE166B4A2421255000B75D53 /* PaylandsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE3F6D2024214A5A006268D3 /* PaylandsClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */; };
+		AE3F6D2324214E74006268D3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D2224214E74006268D3 /* Networking.swift */; };
+		AE64750C242127F600FF5C46 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EC242127F500FF5C46 /* Client.swift */; };
+		AE64750D242127F600FF5C46 /* TransferRecipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474ED242127F500FF5C46 /* TransferRecipient.swift */; };
+		AE64750E242127F600FF5C46 /* CampaignDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EE242127F500FF5C46 /* CampaignDetail.swift */; };
+		AE64750F242127F600FF5C46 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EF242127F500FF5C46 /* Account.swift */; };
+		AE647510242127F600FF5C46 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F0242127F500FF5C46 /* State.swift */; };
+		AE647511242127F600FF5C46 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F1242127F500FF5C46 /* Subscription.swift */; };
+		AE647512242127F600FF5C46 /* CustomerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F2242127F500FF5C46 /* CustomerProfile.swift */; };
+		AE647513242127F600FF5C46 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F3242127F500FF5C46 /* Phone.swift */; };
+		AE647514242127F600FF5C46 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F4242127F500FF5C46 /* Branch.swift */; };
+		AE647515242127F600FF5C46 /* SubscriptionPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F5242127F500FF5C46 /* SubscriptionPlan.swift */; };
+		AE647516242127F600FF5C46 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F6242127F600FF5C46 /* Product.swift */; };
+		AE647517242127F600FF5C46 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F7242127F600FF5C46 /* Agent.swift */; };
+		AE647518242127F600FF5C46 /* CustomerAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F8242127F600FF5C46 /* CustomerAddress.swift */; };
+		AE647519242127F600FF5C46 /* RecipientAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474F9242127F600FF5C46 /* RecipientAgent.swift */; };
+		AE64751A242127F600FF5C46 /* PaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FA242127F600FF5C46 /* PaymentType.swift */; };
+		AE64751B242127F600FF5C46 /* TransferSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FB242127F600FF5C46 /* TransferSender.swift */; };
+		AE64751C242127F600FF5C46 /* BatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FC242127F600FF5C46 /* BatchError.swift */; };
+		AE64751D242127F600FF5C46 /* MotoCampaingPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FD242127F600FF5C46 /* MotoCampaingPayment.swift */; };
+		AE64751E242127F600FF5C46 /* OrderExtraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FE242127F600FF5C46 /* OrderExtraData.swift */; };
+		AE64751F242127F600FF5C46 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474FF242127F600FF5C46 /* Transaction.swift */; };
+		AE647520242127F600FF5C46 /* TransferAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647500242127F600FF5C46 /* TransferAdditional.swift */; };
+		AE647521242127F600FF5C46 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647501242127F600FF5C46 /* Customer.swift */; };
+		AE647522242127F600FF5C46 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647502242127F600FF5C46 /* Order.swift */; };
+		AE647523242127F600FF5C46 /* SubscriptionAdditionalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647503242127F600FF5C46 /* SubscriptionAdditionalData.swift */; };
+		AE647524242127F600FF5C46 /* Antifraud.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647504242127F600FF5C46 /* Antifraud.swift */; };
+		AE647525242127F600FF5C46 /* TransferLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647505242127F600FF5C46 /* TransferLocation.swift */; };
+		AE647526242127F600FF5C46 /* PaymentAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647506242127F600FF5C46 /* PaymentAgent.swift */; };
+		AE647527242127F600FF5C46 /* SubscriptionPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647507242127F600FF5C46 /* SubscriptionPayment.swift */; };
+		AE647528242127F600FF5C46 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647508242127F600FF5C46 /* CardItem.swift */; };
+		AE647529242127F600FF5C46 /* SubscriptionCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647509242127F600FF5C46 /* SubscriptionCompany.swift */; };
+		AE64752A242127F600FF5C46 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64750A242127F600FF5C46 /* Card.swift */; };
+		AE64752B242127F600FF5C46 /* SubscriptionProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64750B242127F600FF5C46 /* SubscriptionProduct.swift */; };
+		AE64753F242129C000FF5C46 /* DocumentIdentificationIssuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64752D242129BF00FF5C46 /* DocumentIdentificationIssuer.swift */; };
+		AE647540242129C000FF5C46 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64752E242129BF00FF5C46 /* AccountType.swift */; };
+		AE647541242129C000FF5C46 /* AddressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64752F242129BF00FF5C46 /* AddressType.swift */; };
+		AE647542242129C000FF5C46 /* Operative.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647530242129BF00FF5C46 /* Operative.swift */; };
+		AE647543242129C000FF5C46 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647531242129BF00FF5C46 /* OrderStatus.swift */; };
+		AE647544242129C000FF5C46 /* SubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647532242129BF00FF5C46 /* SubscriptionStatus.swift */; };
+		AE647545242129C000FF5C46 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647533242129BF00FF5C46 /* CardType.swift */; };
+		AE647546242129C000FF5C46 /* PaymentTypeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647534242129BF00FF5C46 /* PaymentTypeCode.swift */; };
+		AE647547242129C000FF5C46 /* DocumentIdentificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647535242129BF00FF5C46 /* DocumentIdentificationType.swift */; };
+		AE647548242129C000FF5C46 /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647536242129BF00FF5C46 /* EntryType.swift */; };
+		AE647549242129C000FF5C46 /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647537242129BF00FF5C46 /* PaymentStatus.swift */; };
+		AE64754A242129C000FF5C46 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647538242129BF00FF5C46 /* Environment.swift */; };
+		AE64754B242129C000FF5C46 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE647539242129BF00FF5C46 /* TransactionStatus.swift */; };
+		AE64754C242129C000FF5C46 /* MoToCampaignStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64753A242129C000FF5C46 /* MoToCampaignStatus.swift */; };
+		AE64754D242129C000FF5C46 /* CardStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64753B242129C000FF5C46 /* CardStatus.swift */; };
+		AE64754E242129C000FF5C46 /* SubscriptionInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64753C242129C000FF5C46 /* SubscriptionInterval.swift */; };
+		AE64754F242129C000FF5C46 /* MoToCampaignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64753D242129C000FF5C46 /* MoToCampaignType.swift */; };
+		AE647550242129C000FF5C46 /* AntifraudEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64753E242129C000FF5C46 /* AntifraudEvaluation.swift */; };
+		AE64755924212AA800FF5C46 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755324212AA800FF5C46 /* DateTime.swift */; };
+		AE64755A24212AA800FF5C46 /* DateSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755424212AA800FF5C46 /* DateSimple.swift */; };
+		AE64755B24212AA800FF5C46 /* DateTimeTZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755524212AA800FF5C46 /* DateTimeTZ.swift */; };
+		AE64755C24212AA800FF5C46 /* HasDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755624212AA800FF5C46 /* HasDateFormatter.swift */; };
+		AE64755D24212AA800FF5C46 /* DateTimeFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755724212AA800FF5C46 /* DateTimeFull.swift */; };
+		AE64755E24212AA800FF5C46 /* DateQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64755824212AA800FF5C46 /* DateQuery.swift */; };
+		AE64758E24212C7800FF5C46 /* CreateCustomerAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756024212C7600FF5C46 /* CreateCustomerAccountRequest.swift */; };
+		AE64758F24212C7800FF5C46 /* SendWSPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756124212C7600FF5C46 /* SendWSPaymentRequest.swift */; };
+		AE64759024212C7800FF5C46 /* UpdateCustomerProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756224212C7700FF5C46 /* UpdateCustomerProfileRequest.swift */; };
+		AE64759124212C7800FF5C46 /* CreateMotoCampaignRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756324212C7700FF5C46 /* CreateMotoCampaignRequest.swift */; };
+		AE64759224212C7800FF5C46 /* ValidateTokenizedCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756424212C7700FF5C46 /* ValidateTokenizedCardRequest.swift */; };
+		AE64759324212C7800FF5C46 /* SaveCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756524212C7700FF5C46 /* SaveCardRequest.swift */; };
+		AE64759424212C7800FF5C46 /* GetBranchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756624212C7700FF5C46 /* GetBranchesRequest.swift */; };
+		AE64759524212C7800FF5C46 /* GetPaymentTypeByAgentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756724212C7700FF5C46 /* GetPaymentTypeByAgentRequest.swift */; };
+		AE64759624212C7800FF5C46 /* GetCustomerCardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756824212C7700FF5C46 /* GetCustomerCardsRequest.swift */; };
+		AE64759724212C7800FF5C46 /* RemoveSubscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756924212C7700FF5C46 /* RemoveSubscriptionRequest.swift */; };
+		AE64759824212C7800FF5C46 /* CreateCustomerAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756A24212C7700FF5C46 /* CreateCustomerAddressRequest.swift */; };
+		AE64759924212C7800FF5C46 /* CreateCustomerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756B24212C7700FF5C46 /* CreateCustomerRequest.swift */; };
+		AE64759A24212C7800FF5C46 /* GetStatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756C24212C7700FF5C46 /* GetStatesRequest.swift */; };
+		AE64759B24212C7800FF5C46 /* RemoveSubscriptionProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756D24212C7700FF5C46 /* RemoveSubscriptionProductRequest.swift */; };
+		AE64759C24212C7800FF5C46 /* CreateSubscriptionPlanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756E24212C7700FF5C46 /* CreateSubscriptionPlanRequest.swift */; };
+		AE64759D24212C7800FF5C46 /* CreateSubscriptionProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756F24212C7700FF5C46 /* CreateSubscriptionProductRequest.swift */; };
+		AE64759E24212C7800FF5C46 /* ConfirmPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757024212C7700FF5C46 /* ConfirmPaymentRequest.swift */; };
+		AE64759F24212C7800FF5C46 /* GetOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757124212C7700FF5C46 /* GetOrderRequest.swift */; };
+		AE6475A024212C7800FF5C46 /* SendPaymentFileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757224212C7700FF5C46 /* SendPaymentFileRequest.swift */; };
+		AE6475A124212C7800FF5C46 /* GetCustomerAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757324212C7700FF5C46 /* GetCustomerAccountRequest.swift */; };
+		AE6475A224212C7800FF5C46 /* RemoveSubscriptionPlanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757424212C7700FF5C46 /* RemoveSubscriptionPlanRequest.swift */; };
+		AE6475A324212C7800FF5C46 /* SendPayoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757524212C7700FF5C46 /* SendPayoutRequest.swift */; };
+		AE6475A424212C7800FF5C46 /* RefundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757624212C7700FF5C46 /* RefundRequest.swift */; };
+		AE6475A524212C7800FF5C46 /* RemoveCustomerAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757724212C7700FF5C46 /* RemoveCustomerAccountRequest.swift */; };
+		AE6475A624212C7800FF5C46 /* RemoveCustomerAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757824212C7700FF5C46 /* RemoveCustomerAddressRequest.swift */; };
+		AE6475A724212C7800FF5C46 /* GetRedirectPaymentURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757924212C7700FF5C46 /* GetRedirectPaymentURLRequest.swift */; };
+		AE6475A824212C7800FF5C46 /* GetAccountTypeByAgentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757A24212C7700FF5C46 /* GetAccountTypeByAgentRequest.swift */; };
+		AE6475A924212C7800FF5C46 /* GeneratePaymentOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757B24212C7700FF5C46 /* GeneratePaymentOrderRequest.swift */; };
+		AE6475AA24212C7800FF5C46 /* GetCustomerProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757C24212C7800FF5C46 /* GetCustomerProfileRequest.swift */; };
+		AE6475AB24212C7800FF5C46 /* GetPaymentAgentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757D24212C7800FF5C46 /* GetPaymentAgentsRequest.swift */; };
+		AE6475AC24212C7800FF5C46 /* CancelPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */; };
+		AE6475AD24212C7800FF5C46 /* RemoveCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757F24212C7800FF5C46 /* RemoveCardRequest.swift */; };
+		AE6475AE24212C7800FF5C46 /* SubscribeCustomerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758024212C7800FF5C46 /* SubscribeCustomerRequest.swift */; };
+		AE6475AF24212C7800FF5C46 /* TransferRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758124212C7800FF5C46 /* TransferRequest.swift */; };
+		AE6475B024212C7800FF5C46 /* UpdateCustomerAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758224212C7800FF5C46 /* UpdateCustomerAccountRequest.swift */; };
+		AE6475B124212C7800FF5C46 /* UpdateCustomerAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758324212C7800FF5C46 /* UpdateCustomerAddressRequest.swift */; };
+		AE6475B224212C7800FF5C46 /* GetCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758424212C7800FF5C46 /* GetCardRequest.swift */; };
+		AE6475B324212C7800FF5C46 /* CreateCustomerProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758524212C7800FF5C46 /* CreateCustomerProfileRequest.swift */; };
+		AE6475B424212C7800FF5C46 /* GetProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758624212C7800FF5C46 /* GetProductsRequest.swift */; };
+		AE6475B524212C7800FF5C46 /* GetOrdersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758724212C7800FF5C46 /* GetOrdersRequest.swift */; };
+		AE6475B624212C7800FF5C46 /* GetCustomerAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758824212C7800FF5C46 /* GetCustomerAddressRequest.swift */; };
+		AE6475B724212C7800FF5C46 /* SendTokenizedPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758924212C7800FF5C46 /* SendTokenizedPaymentRequest.swift */; };
+		AE6475B824212C7800FF5C46 /* SetCardDescriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758A24212C7800FF5C46 /* SetCardDescriptionRequest.swift */; };
+		AE6475B924212C7800FF5C46 /* SendRefundsFileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758B24212C7800FF5C46 /* SendRefundsFileRequest.swift */; };
+		AE6475BA24212C7800FF5C46 /* SaveCardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758C24212C7800FF5C46 /* SaveCardsRequest.swift */; };
+		AE6475BB24212C7800FF5C46 /* SendOneStepPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758D24212C7800FF5C46 /* SendOneStepPaymentRequest.swift */; };
+		AE6475F124212DBA00FF5C46 /* GetPaymentAgentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475BD24212DB700FF5C46 /* GetPaymentAgentsResponse.swift */; };
+		AE6475F224212DBA00FF5C46 /* SendPayoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475BE24212DB700FF5C46 /* SendPayoutResponse.swift */; };
+		AE6475F324212DBA00FF5C46 /* GetSubscriptionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475BF24212DB700FF5C46 /* GetSubscriptionsResponse.swift */; };
+		AE6475F424212DBA00FF5C46 /* SetCardDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C024212DB700FF5C46 /* SetCardDescriptionResponse.swift */; };
+		AE6475F524212DBA00FF5C46 /* CreateMotoCampaignResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C124212DB700FF5C46 /* CreateMotoCampaignResponse.swift */; };
+		AE6475F624212DBA00FF5C46 /* SaveCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C224212DB700FF5C46 /* SaveCardResponse.swift */; };
+		AE6475F724212DBA00FF5C46 /* SaveCardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C324212DB700FF5C46 /* SaveCardsResponse.swift */; };
+		AE6475F824212DBA00FF5C46 /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C424212DB700FF5C46 /* GetProductsResponse.swift */; };
+		AE6475F924212DBA00FF5C46 /* RefundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C524212DB800FF5C46 /* RefundResponse.swift */; };
+		AE6475FA24212DBA00FF5C46 /* GeneratePaymentOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C624212DB800FF5C46 /* GeneratePaymentOrderResponse.swift */; };
+		AE6475FB24212DBA00FF5C46 /* CreateCustomerAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C724212DB800FF5C46 /* CreateCustomerAddressResponse.swift */; };
+		AE6475FC24212DBA00FF5C46 /* RemoveSubscriptionPlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C824212DB800FF5C46 /* RemoveSubscriptionPlanResponse.swift */; };
+		AE6475FD24212DBA00FF5C46 /* GetCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C924212DB800FF5C46 /* GetCardResponse.swift */; };
+		AE6475FE24212DBA00FF5C46 /* UpdateCustomerAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CA24212DB800FF5C46 /* UpdateCustomerAddressResponse.swift */; };
+		AE6475FF24212DBA00FF5C46 /* GetStatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CB24212DB800FF5C46 /* GetStatesResponse.swift */; };
+		AE64760024212DBA00FF5C46 /* MyApiKeyProfilesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CC24212DB800FF5C46 /* MyApiKeyProfilesResponse.swift */; };
+		AE64760124212DBA00FF5C46 /* CreateCustomerAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CD24212DB800FF5C46 /* CreateCustomerAccountResponse.swift */; };
+		AE64760224212DBA00FF5C46 /* UpdateCustomerAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CE24212DB800FF5C46 /* UpdateCustomerAccountResponse.swift */; };
+		AE64760324212DBA00FF5C46 /* RemoveCustomerAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CF24212DB800FF5C46 /* RemoveCustomerAccountResponse.swift */; };
+		AE64760424212DBA00FF5C46 /* GetOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D024212DB800FF5C46 /* GetOrderResponse.swift */; };
+		AE64760524212DBA00FF5C46 /* CreateSubscriptionPlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D124212DB800FF5C46 /* CreateSubscriptionPlanResponse.swift */; };
+		AE64760624212DBA00FF5C46 /* ConfirmPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D224212DB800FF5C46 /* ConfirmPaymentResponse.swift */; };
+		AE64760724212DBA00FF5C46 /* GetCustomerProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D324212DB800FF5C46 /* GetCustomerProfileResponse.swift */; };
+		AE64760824212DBA00FF5C46 /* CreateSubscriptionProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D424212DB800FF5C46 /* CreateSubscriptionProductResponse.swift */; };
+		AE64760924212DBA00FF5C46 /* GetSubscriptionPlansResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D524212DB800FF5C46 /* GetSubscriptionPlansResponse.swift */; };
+		AE64760A24212DBA00FF5C46 /* RemoveSubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D624212DB800FF5C46 /* RemoveSubscriptionResponse.swift */; };
+		AE64760B24212DBA00FF5C46 /* ValidateTokenizedCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D724212DB800FF5C46 /* ValidateTokenizedCardResponse.swift */; };
+		AE64760C24212DBA00FF5C46 /* GetCustomerAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D824212DB800FF5C46 /* GetCustomerAddressResponse.swift */; };
+		AE64760D24212DBA00FF5C46 /* CreateCustomerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475D924212DB900FF5C46 /* CreateCustomerResponse.swift */; };
+		AE64760E24212DBA00FF5C46 /* TransferResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DA24212DB900FF5C46 /* TransferResponse.swift */; };
+		AE64760F24212DBA00FF5C46 /* GetAccountTypeByAgentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DB24212DB900FF5C46 /* GetAccountTypeByAgentResponse.swift */; };
+		AE64761024212DBA00FF5C46 /* SendOneStepPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DC24212DB900FF5C46 /* SendOneStepPaymentResponse.swift */; };
+		AE64761124212DBA00FF5C46 /* GetCustomerCardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DD24212DB900FF5C46 /* GetCustomerCardsResponse.swift */; };
+		AE64761224212DBA00FF5C46 /* CancelPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DE24212DB900FF5C46 /* CancelPaymentResponse.swift */; };
+		AE64761324212DBA00FF5C46 /* GetPaymentTypeByAgentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475DF24212DB900FF5C46 /* GetPaymentTypeByAgentResponse.swift */; };
+		AE64761424212DBA00FF5C46 /* SubscribeCustomerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E024212DB900FF5C46 /* SubscribeCustomerResponse.swift */; };
+		AE64761524212DBA00FF5C46 /* CreateCustomerProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E124212DB900FF5C46 /* CreateCustomerProfileResponse.swift */; };
+		AE64761624212DBA00FF5C46 /* GetBranchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E224212DB900FF5C46 /* GetBranchesResponse.swift */; };
+		AE64761724212DBA00FF5C46 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E324212DB900FF5C46 /* ErrorResponse.swift */; };
+		AE64761824212DBA00FF5C46 /* RemoveCustomerAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E424212DB900FF5C46 /* RemoveCustomerAddressResponse.swift */; };
+		AE64761924212DBA00FF5C46 /* UpdateCustomerProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E524212DB900FF5C46 /* UpdateCustomerProfileResponse.swift */; };
+		AE64761A24212DBA00FF5C46 /* ApiKeyProfilesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E624212DB900FF5C46 /* ApiKeyProfilesResponse.swift */; };
+		AE64761B24212DBA00FF5C46 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E724212DB900FF5C46 /* BaseResponse.swift */; };
+		AE64761C24212DBA00FF5C46 /* SendWSPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E824212DB900FF5C46 /* SendWSPaymentResponse.swift */; };
+		AE64761D24212DBA00FF5C46 /* CreateSubscriptionCompanyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E924212DB900FF5C46 /* CreateSubscriptionCompanyResponse.swift */; };
+		AE64761E24212DBA00FF5C46 /* SendRefundsFileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475EA24212DB900FF5C46 /* SendRefundsFileResponse.swift */; };
+		AE64761F24212DBA00FF5C46 /* SendPaymentFileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475EB24212DB900FF5C46 /* SendPaymentFileResponse.swift */; };
+		AE64762024212DBA00FF5C46 /* GetOrdersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475EC24212DB900FF5C46 /* GetOrdersResponse.swift */; };
+		AE64762124212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475ED24212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift */; };
+		AE64762224212DBA00FF5C46 /* GetSubscriptionProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475EE24212DBA00FF5C46 /* GetSubscriptionProductsResponse.swift */; };
+		AE64762324212DBA00FF5C46 /* GetCustomerAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475EF24212DBA00FF5C46 /* GetCustomerAccountResponse.swift */; };
+		AE64762424212DBA00FF5C46 /* RemoveCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */; };
+		AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1B242160850099C177 /* ClientSettings.swift */; };
+		AE64BE1E242163AC0099C177 /* PaylandsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1D242163AC0099C177 /* PaylandsClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE166B522421255000B75D53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE166B3E2421255000B75D53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE166B462421255000B75D53;
+			remoteInfo = PaylandsSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE166B472421255000B75D53 /* PaylandsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaylandsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE166B4A2421255000B75D53 /* PaylandsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaylandsSDK.h; sourceTree = "<group>"; };
+		AE166B4B2421255000B75D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE166B502421255000B75D53 /* PaylandsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaylandsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE166B552421255000B75D53 /* PaylandsSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsSDKTests.swift; sourceTree = "<group>"; };
+		AE166B572421255000B75D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClientProtocol.swift; sourceTree = "<group>"; };
+		AE3F6D2224214E74006268D3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		AE6474EC242127F500FF5C46 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		AE6474ED242127F500FF5C46 /* TransferRecipient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRecipient.swift; sourceTree = "<group>"; };
+		AE6474EE242127F500FF5C46 /* CampaignDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignDetail.swift; sourceTree = "<group>"; };
+		AE6474EF242127F500FF5C46 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		AE6474F0242127F500FF5C46 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		AE6474F1242127F500FF5C46 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		AE6474F2242127F500FF5C46 /* CustomerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerProfile.swift; sourceTree = "<group>"; };
+		AE6474F3242127F500FF5C46 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		AE6474F4242127F500FF5C46 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		AE6474F5242127F500FF5C46 /* SubscriptionPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionPlan.swift; sourceTree = "<group>"; };
+		AE6474F6242127F600FF5C46 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AE6474F7242127F600FF5C46 /* Agent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		AE6474F8242127F600FF5C46 /* CustomerAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerAddress.swift; sourceTree = "<group>"; };
+		AE6474F9242127F600FF5C46 /* RecipientAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientAgent.swift; sourceTree = "<group>"; };
+		AE6474FA242127F600FF5C46 /* PaymentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentType.swift; sourceTree = "<group>"; };
+		AE6474FB242127F600FF5C46 /* TransferSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferSender.swift; sourceTree = "<group>"; };
+		AE6474FC242127F600FF5C46 /* BatchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchError.swift; sourceTree = "<group>"; };
+		AE6474FD242127F600FF5C46 /* MotoCampaingPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotoCampaingPayment.swift; sourceTree = "<group>"; };
+		AE6474FE242127F600FF5C46 /* OrderExtraData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderExtraData.swift; sourceTree = "<group>"; };
+		AE6474FF242127F600FF5C46 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		AE647500242127F600FF5C46 /* TransferAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferAdditional.swift; sourceTree = "<group>"; };
+		AE647501242127F600FF5C46 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		AE647502242127F600FF5C46 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AE647503242127F600FF5C46 /* SubscriptionAdditionalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionAdditionalData.swift; sourceTree = "<group>"; };
+		AE647504242127F600FF5C46 /* Antifraud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Antifraud.swift; sourceTree = "<group>"; };
+		AE647505242127F600FF5C46 /* TransferLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferLocation.swift; sourceTree = "<group>"; };
+		AE647506242127F600FF5C46 /* PaymentAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentAgent.swift; sourceTree = "<group>"; };
+		AE647507242127F600FF5C46 /* SubscriptionPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionPayment.swift; sourceTree = "<group>"; };
+		AE647508242127F600FF5C46 /* CardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		AE647509242127F600FF5C46 /* SubscriptionCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionCompany.swift; sourceTree = "<group>"; };
+		AE64750A242127F600FF5C46 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		AE64750B242127F600FF5C46 /* SubscriptionProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionProduct.swift; sourceTree = "<group>"; };
+		AE64752D242129BF00FF5C46 /* DocumentIdentificationIssuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentIdentificationIssuer.swift; sourceTree = "<group>"; };
+		AE64752E242129BF00FF5C46 /* AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		AE64752F242129BF00FF5C46 /* AddressType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressType.swift; sourceTree = "<group>"; };
+		AE647530242129BF00FF5C46 /* Operative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operative.swift; sourceTree = "<group>"; };
+		AE647531242129BF00FF5C46 /* OrderStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		AE647532242129BF00FF5C46 /* SubscriptionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionStatus.swift; sourceTree = "<group>"; };
+		AE647533242129BF00FF5C46 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		AE647534242129BF00FF5C46 /* PaymentTypeCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTypeCode.swift; sourceTree = "<group>"; };
+		AE647535242129BF00FF5C46 /* DocumentIdentificationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentIdentificationType.swift; sourceTree = "<group>"; };
+		AE647536242129BF00FF5C46 /* EntryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
+		AE647537242129BF00FF5C46 /* PaymentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
+		AE647538242129BF00FF5C46 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AE647539242129BF00FF5C46 /* TransactionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
+		AE64753A242129C000FF5C46 /* MoToCampaignStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoToCampaignStatus.swift; sourceTree = "<group>"; };
+		AE64753B242129C000FF5C46 /* CardStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStatus.swift; sourceTree = "<group>"; };
+		AE64753C242129C000FF5C46 /* SubscriptionInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionInterval.swift; sourceTree = "<group>"; };
+		AE64753D242129C000FF5C46 /* MoToCampaignType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoToCampaignType.swift; sourceTree = "<group>"; };
+		AE64753E242129C000FF5C46 /* AntifraudEvaluation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntifraudEvaluation.swift; sourceTree = "<group>"; };
+		AE64755324212AA800FF5C46 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		AE64755424212AA800FF5C46 /* DateSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSimple.swift; sourceTree = "<group>"; };
+		AE64755524212AA800FF5C46 /* DateTimeTZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeTZ.swift; sourceTree = "<group>"; };
+		AE64755624212AA800FF5C46 /* HasDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDateFormatter.swift; sourceTree = "<group>"; };
+		AE64755724212AA800FF5C46 /* DateTimeFull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFull.swift; sourceTree = "<group>"; };
+		AE64755824212AA800FF5C46 /* DateQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateQuery.swift; sourceTree = "<group>"; };
+		AE64756024212C7600FF5C46 /* CreateCustomerAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerAccountRequest.swift; sourceTree = "<group>"; };
+		AE64756124212C7600FF5C46 /* SendWSPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendWSPaymentRequest.swift; sourceTree = "<group>"; };
+		AE64756224212C7700FF5C46 /* UpdateCustomerProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerProfileRequest.swift; sourceTree = "<group>"; };
+		AE64756324212C7700FF5C46 /* CreateMotoCampaignRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMotoCampaignRequest.swift; sourceTree = "<group>"; };
+		AE64756424212C7700FF5C46 /* ValidateTokenizedCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateTokenizedCardRequest.swift; sourceTree = "<group>"; };
+		AE64756524212C7700FF5C46 /* SaveCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCardRequest.swift; sourceTree = "<group>"; };
+		AE64756624212C7700FF5C46 /* GetBranchesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBranchesRequest.swift; sourceTree = "<group>"; };
+		AE64756724212C7700FF5C46 /* GetPaymentTypeByAgentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaymentTypeByAgentRequest.swift; sourceTree = "<group>"; };
+		AE64756824212C7700FF5C46 /* GetCustomerCardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerCardsRequest.swift; sourceTree = "<group>"; };
+		AE64756924212C7700FF5C46 /* RemoveSubscriptionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionRequest.swift; sourceTree = "<group>"; };
+		AE64756A24212C7700FF5C46 /* CreateCustomerAddressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerAddressRequest.swift; sourceTree = "<group>"; };
+		AE64756B24212C7700FF5C46 /* CreateCustomerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerRequest.swift; sourceTree = "<group>"; };
+		AE64756C24212C7700FF5C46 /* GetStatesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStatesRequest.swift; sourceTree = "<group>"; };
+		AE64756D24212C7700FF5C46 /* RemoveSubscriptionProductRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionProductRequest.swift; sourceTree = "<group>"; };
+		AE64756E24212C7700FF5C46 /* CreateSubscriptionPlanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionPlanRequest.swift; sourceTree = "<group>"; };
+		AE64756F24212C7700FF5C46 /* CreateSubscriptionProductRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionProductRequest.swift; sourceTree = "<group>"; };
+		AE64757024212C7700FF5C46 /* ConfirmPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentRequest.swift; sourceTree = "<group>"; };
+		AE64757124212C7700FF5C46 /* GetOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderRequest.swift; sourceTree = "<group>"; };
+		AE64757224212C7700FF5C46 /* SendPaymentFileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentFileRequest.swift; sourceTree = "<group>"; };
+		AE64757324212C7700FF5C46 /* GetCustomerAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerAccountRequest.swift; sourceTree = "<group>"; };
+		AE64757424212C7700FF5C46 /* RemoveSubscriptionPlanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionPlanRequest.swift; sourceTree = "<group>"; };
+		AE64757524212C7700FF5C46 /* SendPayoutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPayoutRequest.swift; sourceTree = "<group>"; };
+		AE64757624212C7700FF5C46 /* RefundRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundRequest.swift; sourceTree = "<group>"; };
+		AE64757724212C7700FF5C46 /* RemoveCustomerAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCustomerAccountRequest.swift; sourceTree = "<group>"; };
+		AE64757824212C7700FF5C46 /* RemoveCustomerAddressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCustomerAddressRequest.swift; sourceTree = "<group>"; };
+		AE64757924212C7700FF5C46 /* GetRedirectPaymentURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRedirectPaymentURLRequest.swift; sourceTree = "<group>"; };
+		AE64757A24212C7700FF5C46 /* GetAccountTypeByAgentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAccountTypeByAgentRequest.swift; sourceTree = "<group>"; };
+		AE64757B24212C7700FF5C46 /* GeneratePaymentOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePaymentOrderRequest.swift; sourceTree = "<group>"; };
+		AE64757C24212C7800FF5C46 /* GetCustomerProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerProfileRequest.swift; sourceTree = "<group>"; };
+		AE64757D24212C7800FF5C46 /* GetPaymentAgentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaymentAgentsRequest.swift; sourceTree = "<group>"; };
+		AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPaymentRequest.swift; sourceTree = "<group>"; };
+		AE64757F24212C7800FF5C46 /* RemoveCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCardRequest.swift; sourceTree = "<group>"; };
+		AE64758024212C7800FF5C46 /* SubscribeCustomerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeCustomerRequest.swift; sourceTree = "<group>"; };
+		AE64758124212C7800FF5C46 /* TransferRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRequest.swift; sourceTree = "<group>"; };
+		AE64758224212C7800FF5C46 /* UpdateCustomerAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerAccountRequest.swift; sourceTree = "<group>"; };
+		AE64758324212C7800FF5C46 /* UpdateCustomerAddressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerAddressRequest.swift; sourceTree = "<group>"; };
+		AE64758424212C7800FF5C46 /* GetCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCardRequest.swift; sourceTree = "<group>"; };
+		AE64758524212C7800FF5C46 /* CreateCustomerProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerProfileRequest.swift; sourceTree = "<group>"; };
+		AE64758624212C7800FF5C46 /* GetProductsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductsRequest.swift; sourceTree = "<group>"; };
+		AE64758724212C7800FF5C46 /* GetOrdersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrdersRequest.swift; sourceTree = "<group>"; };
+		AE64758824212C7800FF5C46 /* GetCustomerAddressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerAddressRequest.swift; sourceTree = "<group>"; };
+		AE64758924212C7800FF5C46 /* SendTokenizedPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendTokenizedPaymentRequest.swift; sourceTree = "<group>"; };
+		AE64758A24212C7800FF5C46 /* SetCardDescriptionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCardDescriptionRequest.swift; sourceTree = "<group>"; };
+		AE64758B24212C7800FF5C46 /* SendRefundsFileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRefundsFileRequest.swift; sourceTree = "<group>"; };
+		AE64758C24212C7800FF5C46 /* SaveCardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCardsRequest.swift; sourceTree = "<group>"; };
+		AE64758D24212C7800FF5C46 /* SendOneStepPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendOneStepPaymentRequest.swift; sourceTree = "<group>"; };
+		AE6475BD24212DB700FF5C46 /* GetPaymentAgentsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaymentAgentsResponse.swift; sourceTree = "<group>"; };
+		AE6475BE24212DB700FF5C46 /* SendPayoutResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPayoutResponse.swift; sourceTree = "<group>"; };
+		AE6475BF24212DB700FF5C46 /* GetSubscriptionsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubscriptionsResponse.swift; sourceTree = "<group>"; };
+		AE6475C024212DB700FF5C46 /* SetCardDescriptionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCardDescriptionResponse.swift; sourceTree = "<group>"; };
+		AE6475C124212DB700FF5C46 /* CreateMotoCampaignResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMotoCampaignResponse.swift; sourceTree = "<group>"; };
+		AE6475C224212DB700FF5C46 /* SaveCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCardResponse.swift; sourceTree = "<group>"; };
+		AE6475C324212DB700FF5C46 /* SaveCardsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCardsResponse.swift; sourceTree = "<group>"; };
+		AE6475C424212DB700FF5C46 /* GetProductsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
+		AE6475C524212DB800FF5C46 /* RefundResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundResponse.swift; sourceTree = "<group>"; };
+		AE6475C624212DB800FF5C46 /* GeneratePaymentOrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePaymentOrderResponse.swift; sourceTree = "<group>"; };
+		AE6475C724212DB800FF5C46 /* CreateCustomerAddressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerAddressResponse.swift; sourceTree = "<group>"; };
+		AE6475C824212DB800FF5C46 /* RemoveSubscriptionPlanResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionPlanResponse.swift; sourceTree = "<group>"; };
+		AE6475C924212DB800FF5C46 /* GetCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCardResponse.swift; sourceTree = "<group>"; };
+		AE6475CA24212DB800FF5C46 /* UpdateCustomerAddressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerAddressResponse.swift; sourceTree = "<group>"; };
+		AE6475CB24212DB800FF5C46 /* GetStatesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStatesResponse.swift; sourceTree = "<group>"; };
+		AE6475CC24212DB800FF5C46 /* MyApiKeyProfilesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApiKeyProfilesResponse.swift; sourceTree = "<group>"; };
+		AE6475CD24212DB800FF5C46 /* CreateCustomerAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerAccountResponse.swift; sourceTree = "<group>"; };
+		AE6475CE24212DB800FF5C46 /* UpdateCustomerAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerAccountResponse.swift; sourceTree = "<group>"; };
+		AE6475CF24212DB800FF5C46 /* RemoveCustomerAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCustomerAccountResponse.swift; sourceTree = "<group>"; };
+		AE6475D024212DB800FF5C46 /* GetOrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrderResponse.swift; sourceTree = "<group>"; };
+		AE6475D124212DB800FF5C46 /* CreateSubscriptionPlanResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionPlanResponse.swift; sourceTree = "<group>"; };
+		AE6475D224212DB800FF5C46 /* ConfirmPaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentResponse.swift; sourceTree = "<group>"; };
+		AE6475D324212DB800FF5C46 /* GetCustomerProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerProfileResponse.swift; sourceTree = "<group>"; };
+		AE6475D424212DB800FF5C46 /* CreateSubscriptionProductResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionProductResponse.swift; sourceTree = "<group>"; };
+		AE6475D524212DB800FF5C46 /* GetSubscriptionPlansResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubscriptionPlansResponse.swift; sourceTree = "<group>"; };
+		AE6475D624212DB800FF5C46 /* RemoveSubscriptionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionResponse.swift; sourceTree = "<group>"; };
+		AE6475D724212DB800FF5C46 /* ValidateTokenizedCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateTokenizedCardResponse.swift; sourceTree = "<group>"; };
+		AE6475D824212DB800FF5C46 /* GetCustomerAddressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerAddressResponse.swift; sourceTree = "<group>"; };
+		AE6475D924212DB900FF5C46 /* CreateCustomerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerResponse.swift; sourceTree = "<group>"; };
+		AE6475DA24212DB900FF5C46 /* TransferResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferResponse.swift; sourceTree = "<group>"; };
+		AE6475DB24212DB900FF5C46 /* GetAccountTypeByAgentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAccountTypeByAgentResponse.swift; sourceTree = "<group>"; };
+		AE6475DC24212DB900FF5C46 /* SendOneStepPaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendOneStepPaymentResponse.swift; sourceTree = "<group>"; };
+		AE6475DD24212DB900FF5C46 /* GetCustomerCardsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerCardsResponse.swift; sourceTree = "<group>"; };
+		AE6475DE24212DB900FF5C46 /* CancelPaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPaymentResponse.swift; sourceTree = "<group>"; };
+		AE6475DF24212DB900FF5C46 /* GetPaymentTypeByAgentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaymentTypeByAgentResponse.swift; sourceTree = "<group>"; };
+		AE6475E024212DB900FF5C46 /* SubscribeCustomerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeCustomerResponse.swift; sourceTree = "<group>"; };
+		AE6475E124212DB900FF5C46 /* CreateCustomerProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerProfileResponse.swift; sourceTree = "<group>"; };
+		AE6475E224212DB900FF5C46 /* GetBranchesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBranchesResponse.swift; sourceTree = "<group>"; };
+		AE6475E324212DB900FF5C46 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		AE6475E424212DB900FF5C46 /* RemoveCustomerAddressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCustomerAddressResponse.swift; sourceTree = "<group>"; };
+		AE6475E524212DB900FF5C46 /* UpdateCustomerProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCustomerProfileResponse.swift; sourceTree = "<group>"; };
+		AE6475E624212DB900FF5C46 /* ApiKeyProfilesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeyProfilesResponse.swift; sourceTree = "<group>"; };
+		AE6475E724212DB900FF5C46 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		AE6475E824212DB900FF5C46 /* SendWSPaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendWSPaymentResponse.swift; sourceTree = "<group>"; };
+		AE6475E924212DB900FF5C46 /* CreateSubscriptionCompanyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionCompanyResponse.swift; sourceTree = "<group>"; };
+		AE6475EA24212DB900FF5C46 /* SendRefundsFileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRefundsFileResponse.swift; sourceTree = "<group>"; };
+		AE6475EB24212DB900FF5C46 /* SendPaymentFileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentFileResponse.swift; sourceTree = "<group>"; };
+		AE6475EC24212DB900FF5C46 /* GetOrdersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOrdersResponse.swift; sourceTree = "<group>"; };
+		AE6475ED24212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSubscriptionProductResponse.swift; sourceTree = "<group>"; };
+		AE6475EE24212DBA00FF5C46 /* GetSubscriptionProductsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubscriptionProductsResponse.swift; sourceTree = "<group>"; };
+		AE6475EF24212DBA00FF5C46 /* GetCustomerAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerAccountResponse.swift; sourceTree = "<group>"; };
+		AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCardResponse.swift; sourceTree = "<group>"; };
+		AE64BE1B242160850099C177 /* ClientSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettings.swift; sourceTree = "<group>"; };
+		AE64BE1D242163AC0099C177 /* PaylandsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE166B442421255000B75D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE166B4D2421255000B75D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE166B512421255000B75D53 /* PaylandsSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE166B3D2421255000B75D53 = {
+			isa = PBXGroup;
+			children = (
+				AE166B492421255000B75D53 /* PaylandsSDK */,
+				AE166B542421255000B75D53 /* PaylandsSDKTests */,
+				AE166B482421255000B75D53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE166B482421255000B75D53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE166B472421255000B75D53 /* PaylandsSDK.framework */,
+				AE166B502421255000B75D53 /* PaylandsSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE166B492421255000B75D53 /* PaylandsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AE6475BC24212CAC00FF5C46 /* Response */,
+				AE64755F24212B9A00FF5C46 /* Request */,
+				AE64755124212A0F00FF5C46 /* Utils */,
+				AE6474EB242126CF00FF5C46 /* Types */,
+				AE166B4A2421255000B75D53 /* PaylandsSDK.h */,
+				AE166B4B2421255000B75D53 /* Info.plist */,
+				AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */,
+				AE64BE1B242160850099C177 /* ClientSettings.swift */,
+				AE64BE1D242163AC0099C177 /* PaylandsClient.swift */,
+			);
+			path = PaylandsSDK;
+			sourceTree = "<group>";
+		};
+		AE166B542421255000B75D53 /* PaylandsSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE166B552421255000B75D53 /* PaylandsSDKTests.swift */,
+				AE166B572421255000B75D53 /* Info.plist */,
+			);
+			path = PaylandsSDKTests;
+			sourceTree = "<group>";
+		};
+		AE3F6D2124214DBD006268D3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F6D2224214E74006268D3 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE6474EB242126CF00FF5C46 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				AE64752C2421289400FF5C46 /* Enums */,
+				AE6474EF242127F500FF5C46 /* Account.swift */,
+				AE6474F7242127F600FF5C46 /* Agent.swift */,
+				AE647504242127F600FF5C46 /* Antifraud.swift */,
+				AE6474FC242127F600FF5C46 /* BatchError.swift */,
+				AE6474F4242127F500FF5C46 /* Branch.swift */,
+				AE6474EE242127F500FF5C46 /* CampaignDetail.swift */,
+				AE64750A242127F600FF5C46 /* Card.swift */,
+				AE647508242127F600FF5C46 /* CardItem.swift */,
+				AE6474EC242127F500FF5C46 /* Client.swift */,
+				AE647501242127F600FF5C46 /* Customer.swift */,
+				AE6474F8242127F600FF5C46 /* CustomerAddress.swift */,
+				AE6474F2242127F500FF5C46 /* CustomerProfile.swift */,
+				AE6474FD242127F600FF5C46 /* MotoCampaingPayment.swift */,
+				AE647502242127F600FF5C46 /* Order.swift */,
+				AE6474FE242127F600FF5C46 /* OrderExtraData.swift */,
+				AE647506242127F600FF5C46 /* PaymentAgent.swift */,
+				AE6474FA242127F600FF5C46 /* PaymentType.swift */,
+				AE6474F3242127F500FF5C46 /* Phone.swift */,
+				AE6474F6242127F600FF5C46 /* Product.swift */,
+				AE6474F9242127F600FF5C46 /* RecipientAgent.swift */,
+				AE6474F0242127F500FF5C46 /* State.swift */,
+				AE6474F1242127F500FF5C46 /* Subscription.swift */,
+				AE647503242127F600FF5C46 /* SubscriptionAdditionalData.swift */,
+				AE647509242127F600FF5C46 /* SubscriptionCompany.swift */,
+				AE647507242127F600FF5C46 /* SubscriptionPayment.swift */,
+				AE6474F5242127F500FF5C46 /* SubscriptionPlan.swift */,
+				AE64750B242127F600FF5C46 /* SubscriptionProduct.swift */,
+				AE6474FF242127F600FF5C46 /* Transaction.swift */,
+				AE647500242127F600FF5C46 /* TransferAdditional.swift */,
+				AE647505242127F600FF5C46 /* TransferLocation.swift */,
+				AE6474ED242127F500FF5C46 /* TransferRecipient.swift */,
+				AE6474FB242127F600FF5C46 /* TransferSender.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		AE64752C2421289400FF5C46 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AE64752E242129BF00FF5C46 /* AccountType.swift */,
+				AE64752F242129BF00FF5C46 /* AddressType.swift */,
+				AE64753E242129C000FF5C46 /* AntifraudEvaluation.swift */,
+				AE64753B242129C000FF5C46 /* CardStatus.swift */,
+				AE647533242129BF00FF5C46 /* CardType.swift */,
+				AE64752D242129BF00FF5C46 /* DocumentIdentificationIssuer.swift */,
+				AE647535242129BF00FF5C46 /* DocumentIdentificationType.swift */,
+				AE647536242129BF00FF5C46 /* EntryType.swift */,
+				AE647538242129BF00FF5C46 /* Environment.swift */,
+				AE64753A242129C000FF5C46 /* MoToCampaignStatus.swift */,
+				AE64753D242129C000FF5C46 /* MoToCampaignType.swift */,
+				AE647530242129BF00FF5C46 /* Operative.swift */,
+				AE647531242129BF00FF5C46 /* OrderStatus.swift */,
+				AE647537242129BF00FF5C46 /* PaymentStatus.swift */,
+				AE647534242129BF00FF5C46 /* PaymentTypeCode.swift */,
+				AE64753C242129C000FF5C46 /* SubscriptionInterval.swift */,
+				AE647532242129BF00FF5C46 /* SubscriptionStatus.swift */,
+				AE647539242129BF00FF5C46 /* TransactionStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AE64755124212A0F00FF5C46 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F6D2124214DBD006268D3 /* Networking */,
+				AE64755224212A2F00FF5C46 /* Dates */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE64755224212A2F00FF5C46 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				AE64755824212AA800FF5C46 /* DateQuery.swift */,
+				AE64755424212AA800FF5C46 /* DateSimple.swift */,
+				AE64755324212AA800FF5C46 /* DateTime.swift */,
+				AE64755724212AA800FF5C46 /* DateTimeFull.swift */,
+				AE64755524212AA800FF5C46 /* DateTimeTZ.swift */,
+				AE64755624212AA800FF5C46 /* HasDateFormatter.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		AE64755F24212B9A00FF5C46 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */,
+				AE64757024212C7700FF5C46 /* ConfirmPaymentRequest.swift */,
+				AE64756024212C7600FF5C46 /* CreateCustomerAccountRequest.swift */,
+				AE64756A24212C7700FF5C46 /* CreateCustomerAddressRequest.swift */,
+				AE64758524212C7800FF5C46 /* CreateCustomerProfileRequest.swift */,
+				AE64756B24212C7700FF5C46 /* CreateCustomerRequest.swift */,
+				AE64756324212C7700FF5C46 /* CreateMotoCampaignRequest.swift */,
+				AE64756E24212C7700FF5C46 /* CreateSubscriptionPlanRequest.swift */,
+				AE64756F24212C7700FF5C46 /* CreateSubscriptionProductRequest.swift */,
+				AE64757B24212C7700FF5C46 /* GeneratePaymentOrderRequest.swift */,
+				AE64757A24212C7700FF5C46 /* GetAccountTypeByAgentRequest.swift */,
+				AE64756624212C7700FF5C46 /* GetBranchesRequest.swift */,
+				AE64758424212C7800FF5C46 /* GetCardRequest.swift */,
+				AE64757324212C7700FF5C46 /* GetCustomerAccountRequest.swift */,
+				AE64758824212C7800FF5C46 /* GetCustomerAddressRequest.swift */,
+				AE64756824212C7700FF5C46 /* GetCustomerCardsRequest.swift */,
+				AE64757C24212C7800FF5C46 /* GetCustomerProfileRequest.swift */,
+				AE64757124212C7700FF5C46 /* GetOrderRequest.swift */,
+				AE64758724212C7800FF5C46 /* GetOrdersRequest.swift */,
+				AE64757D24212C7800FF5C46 /* GetPaymentAgentsRequest.swift */,
+				AE64756724212C7700FF5C46 /* GetPaymentTypeByAgentRequest.swift */,
+				AE64758624212C7800FF5C46 /* GetProductsRequest.swift */,
+				AE64757924212C7700FF5C46 /* GetRedirectPaymentURLRequest.swift */,
+				AE64756C24212C7700FF5C46 /* GetStatesRequest.swift */,
+				AE64757624212C7700FF5C46 /* RefundRequest.swift */,
+				AE64757F24212C7800FF5C46 /* RemoveCardRequest.swift */,
+				AE64757724212C7700FF5C46 /* RemoveCustomerAccountRequest.swift */,
+				AE64757824212C7700FF5C46 /* RemoveCustomerAddressRequest.swift */,
+				AE64757424212C7700FF5C46 /* RemoveSubscriptionPlanRequest.swift */,
+				AE64756D24212C7700FF5C46 /* RemoveSubscriptionProductRequest.swift */,
+				AE64756924212C7700FF5C46 /* RemoveSubscriptionRequest.swift */,
+				AE64756524212C7700FF5C46 /* SaveCardRequest.swift */,
+				AE64758C24212C7800FF5C46 /* SaveCardsRequest.swift */,
+				AE64758D24212C7800FF5C46 /* SendOneStepPaymentRequest.swift */,
+				AE64757224212C7700FF5C46 /* SendPaymentFileRequest.swift */,
+				AE64757524212C7700FF5C46 /* SendPayoutRequest.swift */,
+				AE64758B24212C7800FF5C46 /* SendRefundsFileRequest.swift */,
+				AE64758924212C7800FF5C46 /* SendTokenizedPaymentRequest.swift */,
+				AE64756124212C7600FF5C46 /* SendWSPaymentRequest.swift */,
+				AE64758A24212C7800FF5C46 /* SetCardDescriptionRequest.swift */,
+				AE64758024212C7800FF5C46 /* SubscribeCustomerRequest.swift */,
+				AE64758124212C7800FF5C46 /* TransferRequest.swift */,
+				AE64758224212C7800FF5C46 /* UpdateCustomerAccountRequest.swift */,
+				AE64758324212C7800FF5C46 /* UpdateCustomerAddressRequest.swift */,
+				AE64756224212C7700FF5C46 /* UpdateCustomerProfileRequest.swift */,
+				AE64756424212C7700FF5C46 /* ValidateTokenizedCardRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AE6475BC24212CAC00FF5C46 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AE6475E624212DB900FF5C46 /* ApiKeyProfilesResponse.swift */,
+				AE6475E724212DB900FF5C46 /* BaseResponse.swift */,
+				AE6475DE24212DB900FF5C46 /* CancelPaymentResponse.swift */,
+				AE6475D224212DB800FF5C46 /* ConfirmPaymentResponse.swift */,
+				AE6475CD24212DB800FF5C46 /* CreateCustomerAccountResponse.swift */,
+				AE6475C724212DB800FF5C46 /* CreateCustomerAddressResponse.swift */,
+				AE6475E124212DB900FF5C46 /* CreateCustomerProfileResponse.swift */,
+				AE6475D924212DB900FF5C46 /* CreateCustomerResponse.swift */,
+				AE6475C124212DB700FF5C46 /* CreateMotoCampaignResponse.swift */,
+				AE6475E924212DB900FF5C46 /* CreateSubscriptionCompanyResponse.swift */,
+				AE6475D124212DB800FF5C46 /* CreateSubscriptionPlanResponse.swift */,
+				AE6475D424212DB800FF5C46 /* CreateSubscriptionProductResponse.swift */,
+				AE6475E324212DB900FF5C46 /* ErrorResponse.swift */,
+				AE6475C624212DB800FF5C46 /* GeneratePaymentOrderResponse.swift */,
+				AE6475DB24212DB900FF5C46 /* GetAccountTypeByAgentResponse.swift */,
+				AE6475E224212DB900FF5C46 /* GetBranchesResponse.swift */,
+				AE6475C924212DB800FF5C46 /* GetCardResponse.swift */,
+				AE6475EF24212DBA00FF5C46 /* GetCustomerAccountResponse.swift */,
+				AE6475D824212DB800FF5C46 /* GetCustomerAddressResponse.swift */,
+				AE6475DD24212DB900FF5C46 /* GetCustomerCardsResponse.swift */,
+				AE6475D324212DB800FF5C46 /* GetCustomerProfileResponse.swift */,
+				AE6475D024212DB800FF5C46 /* GetOrderResponse.swift */,
+				AE6475EC24212DB900FF5C46 /* GetOrdersResponse.swift */,
+				AE6475BD24212DB700FF5C46 /* GetPaymentAgentsResponse.swift */,
+				AE6475DF24212DB900FF5C46 /* GetPaymentTypeByAgentResponse.swift */,
+				AE6475C424212DB700FF5C46 /* GetProductsResponse.swift */,
+				AE6475CB24212DB800FF5C46 /* GetStatesResponse.swift */,
+				AE6475D524212DB800FF5C46 /* GetSubscriptionPlansResponse.swift */,
+				AE6475EE24212DBA00FF5C46 /* GetSubscriptionProductsResponse.swift */,
+				AE6475BF24212DB700FF5C46 /* GetSubscriptionsResponse.swift */,
+				AE6475CC24212DB800FF5C46 /* MyApiKeyProfilesResponse.swift */,
+				AE6475C524212DB800FF5C46 /* RefundResponse.swift */,
+				AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */,
+				AE6475CF24212DB800FF5C46 /* RemoveCustomerAccountResponse.swift */,
+				AE6475E424212DB900FF5C46 /* RemoveCustomerAddressResponse.swift */,
+				AE6475C824212DB800FF5C46 /* RemoveSubscriptionPlanResponse.swift */,
+				AE6475ED24212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift */,
+				AE6475D624212DB800FF5C46 /* RemoveSubscriptionResponse.swift */,
+				AE6475C224212DB700FF5C46 /* SaveCardResponse.swift */,
+				AE6475C324212DB700FF5C46 /* SaveCardsResponse.swift */,
+				AE6475DC24212DB900FF5C46 /* SendOneStepPaymentResponse.swift */,
+				AE6475EB24212DB900FF5C46 /* SendPaymentFileResponse.swift */,
+				AE6475BE24212DB700FF5C46 /* SendPayoutResponse.swift */,
+				AE6475EA24212DB900FF5C46 /* SendRefundsFileResponse.swift */,
+				AE6475E824212DB900FF5C46 /* SendWSPaymentResponse.swift */,
+				AE6475C024212DB700FF5C46 /* SetCardDescriptionResponse.swift */,
+				AE6475E024212DB900FF5C46 /* SubscribeCustomerResponse.swift */,
+				AE6475DA24212DB900FF5C46 /* TransferResponse.swift */,
+				AE6475CE24212DB800FF5C46 /* UpdateCustomerAccountResponse.swift */,
+				AE6475CA24212DB800FF5C46 /* UpdateCustomerAddressResponse.swift */,
+				AE6475E524212DB900FF5C46 /* UpdateCustomerProfileResponse.swift */,
+				AE6475D724212DB800FF5C46 /* ValidateTokenizedCardResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE166B422421255000B75D53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE166B582421255000B75D53 /* PaylandsSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE166B462421255000B75D53 /* PaylandsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE166B5B2421255000B75D53 /* Build configuration list for PBXNativeTarget "PaylandsSDK" */;
+			buildPhases = (
+				AE166B422421255000B75D53 /* Headers */,
+				AE166B432421255000B75D53 /* Sources */,
+				AE166B442421255000B75D53 /* Frameworks */,
+				AE166B452421255000B75D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaylandsSDK;
+			productName = PaylandsSDK;
+			productReference = AE166B472421255000B75D53 /* PaylandsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE166B4F2421255000B75D53 /* PaylandsSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE166B5E2421255000B75D53 /* Build configuration list for PBXNativeTarget "PaylandsSDKTests" */;
+			buildPhases = (
+				AE166B4C2421255000B75D53 /* Sources */,
+				AE166B4D2421255000B75D53 /* Frameworks */,
+				AE166B4E2421255000B75D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE166B532421255000B75D53 /* PBXTargetDependency */,
+			);
+			name = PaylandsSDKTests;
+			productName = PaylandsSDKTests;
+			productReference = AE166B502421255000B75D53 /* PaylandsSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE166B3E2421255000B75D53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = user168661;
+				TargetAttributes = {
+					AE166B462421255000B75D53 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					AE166B4F2421255000B75D53 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE166B412421255000B75D53 /* Build configuration list for PBXProject "PaylandsSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE166B3D2421255000B75D53;
+			productRefGroup = AE166B482421255000B75D53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE166B462421255000B75D53 /* PaylandsSDK */,
+				AE166B4F2421255000B75D53 /* PaylandsSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE166B452421255000B75D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE166B4E2421255000B75D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE166B432421255000B75D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE647543242129C000FF5C46 /* OrderStatus.swift in Sources */,
+				AE647528242127F600FF5C46 /* CardItem.swift in Sources */,
+				AE6475AE24212C7800FF5C46 /* SubscribeCustomerRequest.swift in Sources */,
+				AE3F6D2324214E74006268D3 /* Networking.swift in Sources */,
+				AE64759424212C7800FF5C46 /* GetBranchesRequest.swift in Sources */,
+				AE647513242127F600FF5C46 /* Phone.swift in Sources */,
+				AE6475B924212C7800FF5C46 /* SendRefundsFileRequest.swift in Sources */,
+				AE64761124212DBA00FF5C46 /* GetCustomerCardsResponse.swift in Sources */,
+				AE6475B124212C7800FF5C46 /* UpdateCustomerAddressRequest.swift in Sources */,
+				AE647519242127F600FF5C46 /* RecipientAgent.swift in Sources */,
+				AE64761024212DBA00FF5C46 /* SendOneStepPaymentResponse.swift in Sources */,
+				AE64759624212C7800FF5C46 /* GetCustomerCardsRequest.swift in Sources */,
+				AE64761424212DBA00FF5C46 /* SubscribeCustomerResponse.swift in Sources */,
+				AE64761E24212DBA00FF5C46 /* SendRefundsFileResponse.swift in Sources */,
+				AE647549242129C000FF5C46 /* PaymentStatus.swift in Sources */,
+				AE6475B524212C7800FF5C46 /* GetOrdersRequest.swift in Sources */,
+				AE647518242127F600FF5C46 /* CustomerAddress.swift in Sources */,
+				AE64755E24212AA800FF5C46 /* DateQuery.swift in Sources */,
+				AE647514242127F600FF5C46 /* Branch.swift in Sources */,
+				AE64762424212DBA00FF5C46 /* RemoveCardResponse.swift in Sources */,
+				AE6475B024212C7800FF5C46 /* UpdateCustomerAccountRequest.swift in Sources */,
+				AE64755A24212AA800FF5C46 /* DateSimple.swift in Sources */,
+				AE64760F24212DBA00FF5C46 /* GetAccountTypeByAgentResponse.swift in Sources */,
+				AE6475F124212DBA00FF5C46 /* GetPaymentAgentsResponse.swift in Sources */,
+				AE647542242129C000FF5C46 /* Operative.swift in Sources */,
+				AE6475B724212C7800FF5C46 /* SendTokenizedPaymentRequest.swift in Sources */,
+				AE6475F924212DBA00FF5C46 /* RefundResponse.swift in Sources */,
+				AE6475B324212C7800FF5C46 /* CreateCustomerProfileRequest.swift in Sources */,
+				AE6475FA24212DBA00FF5C46 /* GeneratePaymentOrderResponse.swift in Sources */,
+				AE64761224212DBA00FF5C46 /* CancelPaymentResponse.swift in Sources */,
+				AE6475F724212DBA00FF5C46 /* SaveCardsResponse.swift in Sources */,
+				AE64761F24212DBA00FF5C46 /* SendPaymentFileResponse.swift in Sources */,
+				AE64755C24212AA800FF5C46 /* HasDateFormatter.swift in Sources */,
+				AE6475B424212C7800FF5C46 /* GetProductsRequest.swift in Sources */,
+				AE647512242127F600FF5C46 /* CustomerProfile.swift in Sources */,
+				AE647544242129C000FF5C46 /* SubscriptionStatus.swift in Sources */,
+				AE64761924212DBA00FF5C46 /* UpdateCustomerProfileResponse.swift in Sources */,
+				AE64755924212AA800FF5C46 /* DateTime.swift in Sources */,
+				AE64760424212DBA00FF5C46 /* GetOrderResponse.swift in Sources */,
+				AE647529242127F600FF5C46 /* SubscriptionCompany.swift in Sources */,
+				AE64762124212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift in Sources */,
+				AE64759F24212C7800FF5C46 /* GetOrderRequest.swift in Sources */,
+				AE64751B242127F600FF5C46 /* TransferSender.swift in Sources */,
+				AE64760024212DBA00FF5C46 /* MyApiKeyProfilesResponse.swift in Sources */,
+				AE64761C24212DBA00FF5C46 /* SendWSPaymentResponse.swift in Sources */,
+				AE6475A424212C7800FF5C46 /* RefundRequest.swift in Sources */,
+				AE64761B24212DBA00FF5C46 /* BaseResponse.swift in Sources */,
+				AE64760624212DBA00FF5C46 /* ConfirmPaymentResponse.swift in Sources */,
+				AE647546242129C000FF5C46 /* PaymentTypeCode.swift in Sources */,
+				AE64752A242127F600FF5C46 /* Card.swift in Sources */,
+				AE6475FD24212DBA00FF5C46 /* GetCardResponse.swift in Sources */,
+				AE647511242127F600FF5C46 /* Subscription.swift in Sources */,
+				AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */,
+				AE6475AC24212C7800FF5C46 /* CancelPaymentRequest.swift in Sources */,
+				AE647521242127F600FF5C46 /* Customer.swift in Sources */,
+				AE64758F24212C7800FF5C46 /* SendWSPaymentRequest.swift in Sources */,
+				AE64750D242127F600FF5C46 /* TransferRecipient.swift in Sources */,
+				AE64754D242129C000FF5C46 /* CardStatus.swift in Sources */,
+				AE64759924212C7800FF5C46 /* CreateCustomerRequest.swift in Sources */,
+				AE647520242127F600FF5C46 /* TransferAdditional.swift in Sources */,
+				AE647540242129C000FF5C46 /* AccountType.swift in Sources */,
+				AE64760D24212DBA00FF5C46 /* CreateCustomerResponse.swift in Sources */,
+				AE64762024212DBA00FF5C46 /* GetOrdersResponse.swift in Sources */,
+				AE64761D24212DBA00FF5C46 /* CreateSubscriptionCompanyResponse.swift in Sources */,
+				AE64759B24212C7800FF5C46 /* RemoveSubscriptionProductRequest.swift in Sources */,
+				AE6475FB24212DBA00FF5C46 /* CreateCustomerAddressResponse.swift in Sources */,
+				AE6475A024212C7800FF5C46 /* SendPaymentFileRequest.swift in Sources */,
+				AE64762224212DBA00FF5C46 /* GetSubscriptionProductsResponse.swift in Sources */,
+				AE64751A242127F600FF5C46 /* PaymentType.swift in Sources */,
+				AE64759024212C7800FF5C46 /* UpdateCustomerProfileRequest.swift in Sources */,
+				AE64751D242127F600FF5C46 /* MotoCampaingPayment.swift in Sources */,
+				AE647516242127F600FF5C46 /* Product.swift in Sources */,
+				AE64760524212DBA00FF5C46 /* CreateSubscriptionPlanResponse.swift in Sources */,
+				AE6475BB24212C7800FF5C46 /* SendOneStepPaymentRequest.swift in Sources */,
+				AE64751C242127F600FF5C46 /* BatchError.swift in Sources */,
+				AE64761724212DBA00FF5C46 /* ErrorResponse.swift in Sources */,
+				AE6475A624212C7800FF5C46 /* RemoveCustomerAddressRequest.swift in Sources */,
+				AE64759324212C7800FF5C46 /* SaveCardRequest.swift in Sources */,
+				AE6475AA24212C7800FF5C46 /* GetCustomerProfileRequest.swift in Sources */,
+				AE647550242129C000FF5C46 /* AntifraudEvaluation.swift in Sources */,
+				AE64760824212DBA00FF5C46 /* CreateSubscriptionProductResponse.swift in Sources */,
+				AE647523242127F600FF5C46 /* SubscriptionAdditionalData.swift in Sources */,
+				AE64759824212C7800FF5C46 /* CreateCustomerAddressRequest.swift in Sources */,
+				AE6475F224212DBA00FF5C46 /* SendPayoutResponse.swift in Sources */,
+				AE6475A924212C7800FF5C46 /* GeneratePaymentOrderRequest.swift in Sources */,
+				AE647524242127F600FF5C46 /* Antifraud.swift in Sources */,
+				AE64760B24212DBA00FF5C46 /* ValidateTokenizedCardResponse.swift in Sources */,
+				AE6475A724212C7800FF5C46 /* GetRedirectPaymentURLRequest.swift in Sources */,
+				AE647548242129C000FF5C46 /* EntryType.swift in Sources */,
+				AE64754B242129C000FF5C46 /* TransactionStatus.swift in Sources */,
+				AE647515242127F600FF5C46 /* SubscriptionPlan.swift in Sources */,
+				AE64750F242127F600FF5C46 /* Account.swift in Sources */,
+				AE6475B224212C7800FF5C46 /* GetCardRequest.swift in Sources */,
+				AE64759A24212C7800FF5C46 /* GetStatesRequest.swift in Sources */,
+				AE6475A124212C7800FF5C46 /* GetCustomerAccountRequest.swift in Sources */,
+				AE64761524212DBA00FF5C46 /* CreateCustomerProfileResponse.swift in Sources */,
+				AE64BE1E242163AC0099C177 /* PaylandsClient.swift in Sources */,
+				AE6475F624212DBA00FF5C46 /* SaveCardResponse.swift in Sources */,
+				AE6475AF24212C7800FF5C46 /* TransferRequest.swift in Sources */,
+				AE6475B824212C7800FF5C46 /* SetCardDescriptionRequest.swift in Sources */,
+				AE64759224212C7800FF5C46 /* ValidateTokenizedCardRequest.swift in Sources */,
+				AE64751F242127F600FF5C46 /* Transaction.swift in Sources */,
+				AE64759124212C7800FF5C46 /* CreateMotoCampaignRequest.swift in Sources */,
+				AE6475F324212DBA00FF5C46 /* GetSubscriptionsResponse.swift in Sources */,
+				AE3F6D2024214A5A006268D3 /* PaylandsClientProtocol.swift in Sources */,
+				AE64754E242129C000FF5C46 /* SubscriptionInterval.swift in Sources */,
+				AE64760724212DBA00FF5C46 /* GetCustomerProfileResponse.swift in Sources */,
+				AE64754A242129C000FF5C46 /* Environment.swift in Sources */,
+				AE64761624212DBA00FF5C46 /* GetBranchesResponse.swift in Sources */,
+				AE64754F242129C000FF5C46 /* MoToCampaignType.swift in Sources */,
+				AE647547242129C000FF5C46 /* DocumentIdentificationType.swift in Sources */,
+				AE64759C24212C7800FF5C46 /* CreateSubscriptionPlanRequest.swift in Sources */,
+				AE64760324212DBA00FF5C46 /* RemoveCustomerAccountResponse.swift in Sources */,
+				AE64761324212DBA00FF5C46 /* GetPaymentTypeByAgentResponse.swift in Sources */,
+				AE64754C242129C000FF5C46 /* MoToCampaignStatus.swift in Sources */,
+				AE6475F824212DBA00FF5C46 /* GetProductsResponse.swift in Sources */,
+				AE6475AB24212C7800FF5C46 /* GetPaymentAgentsRequest.swift in Sources */,
+				AE6475F424212DBA00FF5C46 /* SetCardDescriptionResponse.swift in Sources */,
+				AE647541242129C000FF5C46 /* AddressType.swift in Sources */,
+				AE64759524212C7800FF5C46 /* GetPaymentTypeByAgentRequest.swift in Sources */,
+				AE6475A824212C7800FF5C46 /* GetAccountTypeByAgentRequest.swift in Sources */,
+				AE647527242127F600FF5C46 /* SubscriptionPayment.swift in Sources */,
+				AE6475A324212C7800FF5C46 /* SendPayoutRequest.swift in Sources */,
+				AE6475F524212DBA00FF5C46 /* CreateMotoCampaignResponse.swift in Sources */,
+				AE64750C242127F600FF5C46 /* Client.swift in Sources */,
+				AE647517242127F600FF5C46 /* Agent.swift in Sources */,
+				AE6475B624212C7800FF5C46 /* GetCustomerAddressRequest.swift in Sources */,
+				AE64760924212DBA00FF5C46 /* GetSubscriptionPlansResponse.swift in Sources */,
+				AE64759E24212C7800FF5C46 /* ConfirmPaymentRequest.swift in Sources */,
+				AE64753F242129C000FF5C46 /* DocumentIdentificationIssuer.swift in Sources */,
+				AE64762324212DBA00FF5C46 /* GetCustomerAccountResponse.swift in Sources */,
+				AE64751E242127F600FF5C46 /* OrderExtraData.swift in Sources */,
+				AE64752B242127F600FF5C46 /* SubscriptionProduct.swift in Sources */,
+				AE6475FF24212DBA00FF5C46 /* GetStatesResponse.swift in Sources */,
+				AE64759724212C7800FF5C46 /* RemoveSubscriptionRequest.swift in Sources */,
+				AE64755B24212AA800FF5C46 /* DateTimeTZ.swift in Sources */,
+				AE647522242127F600FF5C46 /* Order.swift in Sources */,
+				AE6475A224212C7800FF5C46 /* RemoveSubscriptionPlanRequest.swift in Sources */,
+				AE647510242127F600FF5C46 /* State.swift in Sources */,
+				AE64761A24212DBA00FF5C46 /* ApiKeyProfilesResponse.swift in Sources */,
+				AE64750E242127F600FF5C46 /* CampaignDetail.swift in Sources */,
+				AE6475BA24212C7800FF5C46 /* SaveCardsRequest.swift in Sources */,
+				AE64760E24212DBA00FF5C46 /* TransferResponse.swift in Sources */,
+				AE64755D24212AA800FF5C46 /* DateTimeFull.swift in Sources */,
+				AE647525242127F600FF5C46 /* TransferLocation.swift in Sources */,
+				AE64759D24212C7800FF5C46 /* CreateSubscriptionProductRequest.swift in Sources */,
+				AE64760224212DBA00FF5C46 /* UpdateCustomerAccountResponse.swift in Sources */,
+				AE6475AD24212C7800FF5C46 /* RemoveCardRequest.swift in Sources */,
+				AE647526242127F600FF5C46 /* PaymentAgent.swift in Sources */,
+				AE64760C24212DBA00FF5C46 /* GetCustomerAddressResponse.swift in Sources */,
+				AE64758E24212C7800FF5C46 /* CreateCustomerAccountRequest.swift in Sources */,
+				AE64760A24212DBA00FF5C46 /* RemoveSubscriptionResponse.swift in Sources */,
+				AE6475FE24212DBA00FF5C46 /* UpdateCustomerAddressResponse.swift in Sources */,
+				AE64760124212DBA00FF5C46 /* CreateCustomerAccountResponse.swift in Sources */,
+				AE647545242129C000FF5C46 /* CardType.swift in Sources */,
+				AE64761824212DBA00FF5C46 /* RemoveCustomerAddressResponse.swift in Sources */,
+				AE6475FC24212DBA00FF5C46 /* RemoveSubscriptionPlanResponse.swift in Sources */,
+				AE6475A524212C7800FF5C46 /* RemoveCustomerAccountRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE166B4C2421255000B75D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE166B562421255000B75D53 /* PaylandsSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE166B532421255000B75D53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE166B462421255000B75D53 /* PaylandsSDK */;
+			targetProxy = AE166B522421255000B75D53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE166B592421255000B75D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE166B5A2421255000B75D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE166B5C2421255000B75D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9KD63JZ7G6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PaylandsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupoapok.PaylandsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE166B5D2421255000B75D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9KD63JZ7G6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PaylandsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupoapok.PaylandsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE166B5F2421255000B75D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KD63JZ7G6;
+				INFOPLIST_FILE = PaylandsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupoapok.PaylandsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE166B602421255000B75D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KD63JZ7G6;
+				INFOPLIST_FILE = PaylandsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupoapok.PaylandsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE166B412421255000B75D53 /* Build configuration list for PBXProject "PaylandsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE166B592421255000B75D53 /* Debug */,
+				AE166B5A2421255000B75D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE166B5B2421255000B75D53 /* Build configuration list for PBXNativeTarget "PaylandsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE166B5C2421255000B75D53 /* Debug */,
+				AE166B5D2421255000B75D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE166B5E2421255000B75D53 /* Build configuration list for PBXNativeTarget "PaylandsSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE166B5F2421255000B75D53 /* Debug */,
+				AE166B602421255000B75D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE166B3E2421255000B75D53 /* Project object */;
+}

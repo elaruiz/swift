@@ -1,0 +1,21 @@
+//
+// Created by apokdev on 3/10/20.
+//
+
+import Foundation
+
+class GetSubscriptionPlansResponse: BaseResponse {
+    private(set) var plans: [SubscriptionPlan]
+
+
+    private enum CodingKeys: String, CodingKey {
+        case plans
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        try plans = container.decode([SubscriptionPlan].self, forKey: .plans)
+        try super.init(from: decoder)
+
+    }
+}

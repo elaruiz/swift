@@ -1,0 +1,11 @@
+//
+// Created by apokdev on 3/5/20.
+//
+
+import Foundation
+
+struct TransferAdditional: Codable {
+    private(set) var reason: String
+
+}
+
