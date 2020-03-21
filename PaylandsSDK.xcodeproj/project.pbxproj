@@ -168,6 +168,7 @@
 		AE64762424212DBA00FF5C46 /* RemoveCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */; };
 		AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1B242160850099C177 /* ClientSettings.swift */; };
 		AE64BE1E242163AC0099C177 /* PaylandsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1D242163AC0099C177 /* PaylandsClient.swift */; };
+		AEEFF1022423ED6500AAC210 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEFF1012423ED6500AAC210 /* AppUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -345,6 +346,7 @@
 		AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCardResponse.swift; sourceTree = "<group>"; };
 		AE64BE1B242160850099C177 /* ClientSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettings.swift; sourceTree = "<group>"; };
 		AE64BE1D242163AC0099C177 /* PaylandsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClient.swift; sourceTree = "<group>"; };
+		AEEFF1012423ED6500AAC210 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +489,7 @@
 			children = (
 				AE3F6D2124214DBD006268D3 /* Networking */,
 				AE64755224212A2F00FF5C46 /* Dates */,
+				AEEFF1012423ED6500AAC210 /* AppUtility.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -839,6 +842,7 @@
 				AE647547242129C000FF5C46 /* DocumentIdentificationType.swift in Sources */,
 				AE64759C24212C7800FF5C46 /* CreateSubscriptionPlanRequest.swift in Sources */,
 				AE64760324212DBA00FF5C46 /* RemoveCustomerAccountResponse.swift in Sources */,
+				AEEFF1022423ED6500AAC210 /* AppUtility.swift in Sources */,
 				AE64761324212DBA00FF5C46 /* GetPaymentTypeByAgentResponse.swift in Sources */,
 				AE64754C242129C000FF5C46 /* MoToCampaignStatus.swift in Sources */,
 				AE6475F824212DBA00FF5C46 /* GetProductsResponse.swift in Sources */,

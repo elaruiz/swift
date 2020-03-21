@@ -10,7 +10,7 @@ import Foundation
 
 public struct ClientSettings {
     private(set) var apiKey: String = ""
-    private(set) var env: Environment? = Environment.PRODUCTION
+    private(set) var env: Environment = Environment.PRODUCTION
     private(set) var signature: String? = ""
 }
 

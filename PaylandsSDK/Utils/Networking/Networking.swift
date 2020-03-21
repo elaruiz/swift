@@ -1,12 +1,14 @@
 //
-//  Networking.swift
-//  PaylandsSDK
-//
-//  Created by apokdev on 3/17/20.
-//  Copyright © 2020 apokdev. All rights reserved.
+// Created by Daniela Ruiz on 17/3/2020.
 //
 
 import Foundation
+
+extension String {
+    func toBase64() -> String {
+        return Data(self.utf8).base64EncodedString()
+    }
+}
 
 enum HTTPMethod: String {
     case get = "GET"
@@ -39,7 +41,9 @@ class APIRequest {
     init<Body: Encodable>(method: HTTPMethod, path: String, body: Body) throws {
         self.method = method
         self.path = path
-        self.body = try JSONEncoder().encode(body)
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        self.body = try encoder.encode(body)
     }
 }
 
@@ -72,10 +76,22 @@ enum APIResult<Body> {
 
 struct APIClient {
 
-    typealias APIClientCompletion = (APIResult<Data?>) -> Void
+    typealias APIClientCompletion = (() throws -> APIResponse<Data?>) -> Void
 
     private let session = URLSession.shared
-    private let baseURL = URL(string: "https://jsonplaceholder.typicode.com")!
+    private let baseURL: URL
+    private var headers: [HTTPHeader]?
+    private(set) var signature: String
+
+    init(baseURL: String, apiKey: String = "", signature: String = "") {
+        self.baseURL = URL(string: baseURL)!
+        self.headers = [
+            HTTPHeader(field: "Accept", value: "application/json"),
+            HTTPHeader(field: "Content-Type", value: "application/json"),
+            HTTPHeader(field: "Authorization", value: "Basic \(apiKey.toBase64())")
+        ]
+        self.signature = signature
+    }
 
     func perform(_ request: APIRequest, _ completion: @escaping APIClientCompletion) {
 
@@ -86,20 +102,40 @@ struct APIClient {
         urlComponents.queryItems = request.queryItems
 
         guard let url = urlComponents.url?.appendingPathComponent(request.path) else {
-            completion(.failure(.invalidURL)); return
+            completion { throw APIError.invalidURL }
+            return
         }
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
-        urlRequest.httpBody = request.body
+//        urlRequest.httpBody = request.body
 
-        request.headers?.forEach { urlRequest.addValue($0.value, forHTTPHeaderField: $0.field) }
+        if ["POST", "PUT", "DELETE"].contains(request.method.rawValue) {
+            do {
+                if var json = try JSONSerialization.jsonObject(with: request.body ?? Data("{}".utf8), options: []) as? [String: Any] {
+                    json["signature"] = self.signature
+                    urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: json)
+                }
+            } catch _ {
+                return
+            }
+        }
+
+        self.headers?.forEach {
+            urlRequest.addValue($0.value, forHTTPHeaderField: $0.field)
+        }
+
+        print("\(urlRequest.httpMethod ?? "")")
+        let str = String(decoding: urlRequest.httpBody ?? Data(), as: UTF8.self)
+        print("BODY \n \(str)")
+        print("HEADERS \n \(String(describing: urlRequest.allHTTPHeaderFields))")
 
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
             guard let httpResponse = response as? HTTPURLResponse else {
-                completion(.failure(.requestFailed)); return
+                completion { throw APIError.requestFailed }
+                return
             }
-            completion(.success(APIResponse<Data?>(statusCode: httpResponse.statusCode, body: data)))
+            completion { (APIResponse<Data?>(statusCode: httpResponse.statusCode, body: data)) }
         }
         task.resume()
     }
