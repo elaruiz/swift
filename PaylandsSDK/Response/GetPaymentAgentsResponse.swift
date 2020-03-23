@@ -7,6 +7,10 @@ import Foundation
 class GetPaymentAgentsResponse: BaseResponse {
     private(set) var agents: [PaymentAgent]
 
+    init(message: String, code: Int, currentTime: String? = nil, agents: [PaymentAgent]) {
+        self.agents = agents
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case agents = "paymentAgents"

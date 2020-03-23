@@ -7,6 +7,10 @@ import Foundation
 class SendPaymentFileResponse: BaseResponse {
     private(set) var errors: [BatchError]
 
+    init(message: String, code: Int, currentTime: String? = nil, errors: [BatchError]) {
+        self.errors = errors
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case errors

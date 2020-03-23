@@ -7,6 +7,11 @@ import Foundation
 class CreateSubscriptionPlanResponse: BaseResponse {
     private(set) var plan: SubscriptionPlan
 
+    init(message: String, code: Int, currentTime: String? = nil, plan: SubscriptionPlan) {
+        self.plan = plan
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case plan
     }

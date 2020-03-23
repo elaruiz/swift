@@ -7,6 +7,11 @@ import Foundation
 class GetCustomerProfileResponse: BaseResponse {
     private(set) var profile: CustomerProfile
 
+    init(message: String, code: Int, currentTime: String? = nil, profile: CustomerProfile) {
+        self.profile = profile
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case profile = "customer_profile"
     }

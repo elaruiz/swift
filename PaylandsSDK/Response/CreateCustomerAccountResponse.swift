@@ -8,6 +8,12 @@ class CreateCustomerAccountResponse: BaseResponse {
     private(set) var customer: Customer
     private(set) var account: Account
 
+    init(message: String, code: Int, currentTime: String? = nil, customer: Customer, account: Account) {
+        self.customer = customer
+        self.account = account
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case customer
         case account = "customer_account"

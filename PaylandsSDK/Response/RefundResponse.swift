@@ -8,6 +8,11 @@ class RefundResponse: BaseResponse {
     private(set) var order: Order
     private(set) var client: Client?
 
+    init(message: String, code: Int, currentTime: String? = nil, order: Order, client: Client? = nil) {
+        self.order = order
+        self.client = client
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case order, client

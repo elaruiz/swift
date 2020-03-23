@@ -7,6 +7,10 @@ import Foundation
 class SubscribeCustomerResponse: BaseResponse {
     private(set) var subscription: Subscription
 
+    init(message: String, code: Int, currentTime: String? = nil, subscription: Subscription) {
+        self.subscription = subscription
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case subscription

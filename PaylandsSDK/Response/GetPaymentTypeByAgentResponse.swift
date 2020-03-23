@@ -7,6 +7,10 @@ import Foundation
 class GetPaymentTypeByAgentResponse: BaseResponse {
     private(set) var paymentTypes: [PaymentType]
 
+    init(message: String, code: Int, currentTime: String? = nil, paymentTypes: [PaymentType]) {
+        self.paymentTypes = paymentTypes
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case paymentTypes = "payment_types"

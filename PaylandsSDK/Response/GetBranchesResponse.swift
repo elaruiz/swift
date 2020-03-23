@@ -7,6 +7,11 @@ import Foundation
 class GetBranchesResponse: BaseResponse {
     private(set) var branches: [Branch]
 
+    init(message: String, code: Int, currentTime: String? = nil, branches: [Branch]) {
+        self.branches = branches
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case branches
     }

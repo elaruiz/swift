@@ -8,6 +8,12 @@ class CreateMotoCampaignResponse: BaseResponse {
     private(set) var detail: CampaignDetail
     private(set) var payments: [MotoCampaignPayment]
 
+    init(message: String, code: Int, currentTime: String? = nil, detail: CampaignDetail, payments: [MotoCampaignPayment]) {
+        self.detail = detail
+        self.payments = payments
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case detail, payments
     }

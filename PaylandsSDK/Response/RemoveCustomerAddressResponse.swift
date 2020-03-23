@@ -7,6 +7,10 @@ import Foundation
 class RemoveCustomerAddressResponse: BaseResponse {
     private(set) var customerAddress: CustomerAddress
 
+    init(message: String, code: Int, currentTime: String? = nil, customerAddress: CustomerAddress) {
+        self.customerAddress = customerAddress
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case customerAddress = "customer_address"

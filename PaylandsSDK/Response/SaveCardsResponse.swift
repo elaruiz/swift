@@ -7,6 +7,11 @@ import Foundation
 class SaveCardsResponse: BaseResponse {
     private(set) var cards: [CardItem]
 
+    init(message: String, code: Int, currentTime: String? = nil, cards: [CardItem]) {
+        self.cards = cards
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case cards
     }

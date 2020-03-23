@@ -8,6 +8,12 @@ class SaveCardResponse: BaseResponse {
     private(set) var customer: Customer
     private(set) var card: Card
 
+    init(message: String, code: Int, currentTime: String? = nil, customer: Customer, card: Card) {
+        self.customer = customer
+        self.card = card
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case customer = "Customer"
         case card = "Source"

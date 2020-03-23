@@ -7,6 +7,11 @@ import Foundation
 class GetCustomerAddressResponse: BaseResponse {
     private(set) var address: CustomerAddress
 
+    init(message: String, code: Int, currentTime: String? = nil, address: CustomerAddress) {
+        self.address = address
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case address = "customer_address"
     }

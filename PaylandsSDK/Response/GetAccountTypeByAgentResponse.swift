@@ -7,6 +7,11 @@ import Foundation
 class GetAccountTypeByAgentResponse: BaseResponse {
     private(set) var accounts: [String]
 
+    init(message: String, code: Int, currentTime: String? = nil, accounts: [String]) {
+        self.accounts = accounts
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case accounts
     }

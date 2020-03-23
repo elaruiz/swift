@@ -7,6 +7,10 @@ import Foundation
 class GetSubscriptionsResponse: BaseResponse {
     private(set) var subscriptions: [Subscription]
 
+    init(message: String, code: Int, currentTime: String? = nil, subscriptions: [Subscription]) {
+        self.subscriptions = subscriptions
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case subscriptions

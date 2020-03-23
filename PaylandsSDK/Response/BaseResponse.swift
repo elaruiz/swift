@@ -7,7 +7,13 @@ import Foundation
 class BaseResponse: Decodable {
     private(set) var code: Int
     private(set) var message: String
-    private(set) var currentTime: CustomDate<DateTimeFull>? = nil
+    private(set) var currentTime: String? = nil
+
+    init(message: String, code: Int, currentTime: String? = nil) {
+        self.message = message
+        self.code = code
+        self.currentTime = currentTime
+    }
 
     private enum CodingKeys: String, CodingKey {
         case code, message
@@ -18,7 +24,7 @@ class BaseResponse: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         try code = container.decode(Int.self, forKey: .code)
         try message = container.decode(String.self, forKey: .message)
-        try currentTime = container.decodeIfPresent(CustomDate<DateTimeFull>.self, forKey: .currentTime)
+        try currentTime = container.decodeIfPresent(String.self, forKey: .currentTime)
 
     }
 }

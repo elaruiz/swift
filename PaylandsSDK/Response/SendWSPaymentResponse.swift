@@ -9,6 +9,12 @@ class SendWSPaymentResponse: BaseResponse {
     private(set) var client: Client
     private(set) var extraData: OrderExtraData? = nil
 
+    init(message: String, code: Int, currentTime: String? = nil, order: Order, client: Client, extraData: OrderExtraData? = nil) {
+        self.order = order
+        self.client = client
+        self.extraData = extraData
+        super.init(message: message, code: code, currentTime: currentTime)
+    }
 
     private enum CodingKeys: String, CodingKey {
         case order, client
