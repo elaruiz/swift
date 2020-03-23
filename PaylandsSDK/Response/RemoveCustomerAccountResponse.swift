@@ -7,9 +7,8 @@ import Foundation
 class RemoveCustomerAccountResponse: BaseResponse {
     private(set) var customerAccount: Account
 
-    init(message: String, code: Int, currentTime: String? = nil, order: Order, client: Client? = nil) {
-        self.order = order
-        self.client = client
+    init(message: String, code: Int, currentTime: String? = nil, customerAccount: Account) {
+        self.customerAccount = customerAccount
         super.init(message: message, code: code, currentTime: currentTime)
     }
 

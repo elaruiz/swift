@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PaylandsClients: PaylandsClientProtocol {
+public struct PaylandsClient {
    
     private(set) var settings: ClientSettings
     private var httpClient: APIClient

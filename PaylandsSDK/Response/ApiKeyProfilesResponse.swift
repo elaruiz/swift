@@ -22,3 +22,12 @@ class ApiKeyProfilesResponse: BaseResponse {
         try super.init(from: decoder)
     }
 }
+
+extension ApiKeyProfilesResponse: Equatable  {
+  static func == (lhs: ApiKeyProfilesResponse, rhs: ApiKeyProfilesResponse) -> Bool {
+    return lhs.message == rhs.message &&
+    lhs.code == rhs.code &&
+    lhs.currentTime == rhs.currentTime &&
+    lhs.profiles == rhs.profiles
+ }
+}

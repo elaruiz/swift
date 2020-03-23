@@ -5,10 +5,10 @@
 import Foundation
 
 protocol PaylandsClientProtocol {
-    var settings: ClientSettings { get }
+//    var settings: ClientSettings { get }
     // Api Keys //
 
-    func getApiKeyProfiles() throws -> ApiKeyProfilesResponse
+    func getApiKeyProfiles(_ result: @escaping (Result<ApiKeyProfilesResponse, HTTPNetworkError>) -> Void)
 
    /* func getMyApiKeyProfile() -> MyApiKeyProfilesResponse
 

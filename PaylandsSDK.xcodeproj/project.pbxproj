@@ -12,6 +12,7 @@
 		AE166B582421255000B75D53 /* PaylandsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AE166B4A2421255000B75D53 /* PaylandsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE3F6D2024214A5A006268D3 /* PaylandsClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */; };
 		AE3F6D2324214E74006268D3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D2224214E74006268D3 /* Networking.swift */; };
+		AE5C7089242906E8002E1950 /* ApiKeyProfilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */; };
 		AE64750C242127F600FF5C46 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EC242127F500FF5C46 /* Client.swift */; };
 		AE64750D242127F600FF5C46 /* TransferRecipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474ED242127F500FF5C46 /* TransferRecipient.swift */; };
 		AE64750E242127F600FF5C46 /* CampaignDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EE242127F500FF5C46 /* CampaignDetail.swift */; };
@@ -168,6 +169,13 @@
 		AE64762424212DBA00FF5C46 /* RemoveCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */; };
 		AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1B242160850099C177 /* ClientSettings.swift */; };
 		AE64BE1E242163AC0099C177 /* PaylandsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1D242163AC0099C177 /* PaylandsClient.swift */; };
+		AEAC424B2428D2400093484F /* PaylandsClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC424A2428D2400093484F /* PaylandsClientMock.swift */; };
+		AEAC424F2428D37B0093484F /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */; };
+		AEAC42502428D5D60093484F /* PaylandsClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */; };
+		AEAC42512428D6320093484F /* ApiKeyProfilesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E624212DB900FF5C46 /* ApiKeyProfilesResponse.swift */; };
+		AEAC42522428D64E0093484F /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */; };
+		AEAC42532428D6D10093484F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E724212DB900FF5C46 /* BaseResponse.swift */; };
+		AEEA687124296AF800776966 /* TestResources in Resources */ = {isa = PBXBuildFile; fileRef = AEEA687024296AF800776966 /* TestResources */; };
 		AEEFF1022423ED6500AAC210 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEFF1012423ED6500AAC210 /* AppUtility.swift */; };
 /* End PBXBuildFile section */
 
@@ -190,6 +198,7 @@
 		AE166B572421255000B75D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClientProtocol.swift; sourceTree = "<group>"; };
 		AE3F6D2224214E74006268D3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyProfilesTests.swift; sourceTree = "<group>"; };
 		AE6474EC242127F500FF5C46 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AE6474ED242127F500FF5C46 /* TransferRecipient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRecipient.swift; sourceTree = "<group>"; };
 		AE6474EE242127F500FF5C46 /* CampaignDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignDetail.swift; sourceTree = "<group>"; };
@@ -346,6 +355,9 @@
 		AE6475F024212DBA00FF5C46 /* RemoveCardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCardResponse.swift; sourceTree = "<group>"; };
 		AE64BE1B242160850099C177 /* ClientSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettings.swift; sourceTree = "<group>"; };
 		AE64BE1D242163AC0099C177 /* PaylandsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClient.swift; sourceTree = "<group>"; };
+		AEAC424A2428D2400093484F /* PaylandsClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClientMock.swift; sourceTree = "<group>"; };
+		AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkError.swift; sourceTree = "<group>"; };
+		AEEA687024296AF800776966 /* TestResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestResources; sourceTree = "<group>"; };
 		AEEFF1012423ED6500AAC210 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +401,7 @@
 		AE166B492421255000B75D53 /* PaylandsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AEAC424C2428D3180093484F /* Network */,
 				AE6475BC24212CAC00FF5C46 /* Response */,
 				AE64755F24212B9A00FF5C46 /* Request */,
 				AE64755124212A0F00FF5C46 /* Utils */,
@@ -405,6 +418,9 @@
 		AE166B542421255000B75D53 /* PaylandsSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA687024296AF800776966 /* TestResources */,
+				AE5C708424290639002E1950 /* Tests */,
+				AEAC42472428D01C0093484F /* Mock */,
 				AE166B552421255000B75D53 /* PaylandsSDKTests.swift */,
 				AE166B572421255000B75D53 /* Info.plist */,
 			);
@@ -417,6 +433,22 @@
 				AE3F6D2224214E74006268D3 /* Networking.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE5C708424290639002E1950 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C7087242906B5002E1950 /* Profile */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AE5C7087242906B5002E1950 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		AE6474EB242126CF00FF5C46 /* Types */ = {
@@ -577,6 +609,7 @@
 				AE6475D424212DB800FF5C46 /* CreateSubscriptionProductResponse.swift */,
 				AE6475E324212DB900FF5C46 /* ErrorResponse.swift */,
 				AE6475C624212DB800FF5C46 /* GeneratePaymentOrderResponse.swift */,
+				AE6475C224212DB700FF5C46 /* SaveCardResponse.swift */,
 				AE6475DB24212DB900FF5C46 /* GetAccountTypeByAgentResponse.swift */,
 				AE6475E224212DB900FF5C46 /* GetBranchesResponse.swift */,
 				AE6475C924212DB800FF5C46 /* GetCardResponse.swift */,
@@ -601,9 +634,7 @@
 				AE6475C824212DB800FF5C46 /* RemoveSubscriptionPlanResponse.swift */,
 				AE6475ED24212DBA00FF5C46 /* RemoveSubscriptionProductResponse.swift */,
 				AE6475D624212DB800FF5C46 /* RemoveSubscriptionResponse.swift */,
-				AE6475C224212DB700FF5C46 /* SaveCardResponse.swift */,
 				AE6475C324212DB700FF5C46 /* SaveCardsResponse.swift */,
-				AE6475DC24212DB900FF5C46 /* SendOneStepPaymentResponse.swift */,
 				AE6475EB24212DB900FF5C46 /* SendPaymentFileResponse.swift */,
 				AE6475BE24212DB700FF5C46 /* SendPayoutResponse.swift */,
 				AE6475EA24212DB900FF5C46 /* SendRefundsFileResponse.swift */,
@@ -611,12 +642,37 @@
 				AE6475C024212DB700FF5C46 /* SetCardDescriptionResponse.swift */,
 				AE6475E024212DB900FF5C46 /* SubscribeCustomerResponse.swift */,
 				AE6475DA24212DB900FF5C46 /* TransferResponse.swift */,
+				AE6475DC24212DB900FF5C46 /* SendOneStepPaymentResponse.swift */,
 				AE6475CE24212DB800FF5C46 /* UpdateCustomerAccountResponse.swift */,
 				AE6475CA24212DB800FF5C46 /* UpdateCustomerAddressResponse.swift */,
 				AE6475E524212DB900FF5C46 /* UpdateCustomerProfileResponse.swift */,
 				AE6475D724212DB800FF5C46 /* ValidateTokenizedCardResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		AEAC42472428D01C0093484F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC424A2428D2400093484F /* PaylandsClientMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		AEAC424C2428D3180093484F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC424D2428D3450093484F /* HTTP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AEAC424D2428D3450093484F /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -719,6 +775,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEA687124296AF800776966 /* TestResources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +791,7 @@
 				AE6475AE24212C7800FF5C46 /* SubscribeCustomerRequest.swift in Sources */,
 				AE3F6D2324214E74006268D3 /* Networking.swift in Sources */,
 				AE64759424212C7800FF5C46 /* GetBranchesRequest.swift in Sources */,
+				AEAC424F2428D37B0093484F /* HTTPNetworkError.swift in Sources */,
 				AE647513242127F600FF5C46 /* Phone.swift in Sources */,
 				AE6475B924212C7800FF5C46 /* SendRefundsFileRequest.swift in Sources */,
 				AE64761124212DBA00FF5C46 /* GetCustomerCardsResponse.swift in Sources */,
@@ -895,7 +953,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAC42522428D64E0093484F /* HTTPNetworkError.swift in Sources */,
+				AE5C7089242906E8002E1950 /* ApiKeyProfilesTests.swift in Sources */,
+				AEAC424B2428D2400093484F /* PaylandsClientMock.swift in Sources */,
+				AEAC42512428D6320093484F /* ApiKeyProfilesResponse.swift in Sources */,
+				AEAC42532428D6D10093484F /* BaseResponse.swift in Sources */,
 				AE166B562421255000B75D53 /* PaylandsSDKTests.swift in Sources */,
+				AEAC42502428D5D60093484F /* PaylandsClientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

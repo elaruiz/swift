@@ -6,8 +6,6 @@ import Foundation
 
 class RemoveCardResponse: BaseResponse {
 
-    init(message: String, code: Int, currentTime: String? = nil) {
-        super.init(message: message, code: code, currentTime: currentTime)
-    }
+
 
 }

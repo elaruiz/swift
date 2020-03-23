@@ -1,0 +1,67 @@
+{
+  "message": "OK",
+  "code": 200,
+  "current_time": "2020-01-21T15:34:20+0100",
+  "order": {
+    "uuid": "72F1D45B-23AF-4CAE-99AA-CF3F7D6EFA92",
+    "created": "2020-01-21T15:33:49+0100",
+    "created_from_client_timezone": "2020-01-21T15:33:49+0100",
+    "amount": 175,
+    "currency": "840",
+    "paid": false,
+    "status": "PENDING_PROCESSOR_RESPONSE",
+    "safe": false,
+    "refunded": 0,
+    "additional": "Info extra",
+    "service": "BTS",
+    "customer": "pnpBTS",
+    "transactions": [
+      {
+        "uuid": "215D7C8F-1E30-49CF-A0BC-26ADA423C91E",
+        "created": "2020-01-21T15:33:59+0100",
+        "created_from_client_timezone": "2020-01-21T15:33:59+0100",
+        "operative": "TRANSFER",
+        "amount": 175,
+        "authorization": "",
+        "status": "PENDING",
+        "error": "NONE",
+        "source": {
+          "uuid": "E55C14C1-A008-4036-841E-CE36C0F1FBC8",
+          "confirmation_number": "18896995600",
+          "agent_region": "1",
+          "agent_branch": "CAF09001",
+          "agent_state": "ARA",
+          "agent_country": "ESP",
+          "payment_type": "CSA",
+          "sender_payment_type": "CSH",
+          "sender_bank_code": null,
+          "origin_country": "ESP",
+          "origin_currency": "EUR",
+          "destination_country": "DOM",
+          "destination_currency": "DOP",
+          "recipient_agent_code": "BH1",
+          "recipient_agent_region": null,
+          "recipient_agent_branch": null,
+          "reason": "Entradas de cine",
+          "created_at": "2020-01-21 15:33:59"
+        },
+        "antifraud": {
+          "evaluation": "NONE",
+          "score" : 0,
+          "risk_score": 150,
+          "fraud_score": 250
+        },
+      }
+    ],
+    "token": "13d7103424f60825bb2696e00e2ba83da9a033b8fa3609c15dea7fb65066b09d719b7006a18368fb3dbb72844e7a8b89775c89ef31e0926ee0ab46c222bbba6b",
+    "ip": null
+  },
+  "client": {
+    "uuid": "B8A48789-8AF0-47D1-9116-35AB0A941121"
+  },
+  "extra_data": {
+    "payment": {
+      "installments": 3
+    }
+  }
+}
