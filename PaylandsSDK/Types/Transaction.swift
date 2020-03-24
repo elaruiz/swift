@@ -26,8 +26,7 @@ struct Transaction: Codable {
 
 extension Transaction: Equatable  {
     static func == (a: Transaction, b: Transaction) -> Bool {
-        return
-        a.uuid == b.uuid &&
+        return a.uuid == b.uuid &&
         a.created == b.created &&
         a.createdFromClientTimezone == b.createdFromClientTimezone &&
         a.operative == b.operative &&

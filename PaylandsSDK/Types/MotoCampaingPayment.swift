@@ -14,7 +14,7 @@ struct MotoCampaignPayment: Codable {
     private(set) var operative: Operative
     private(set) var secure: Bool
     private(set) var destination: String
-    private(set) var createdAt: CustomDate<DateTime>
+    private(set) var createdAt: String
     private(set) var externalId: String?
     private(set) var additional: String?
     private(set) var urlPost: String?
@@ -28,8 +28,7 @@ struct MotoCampaignPayment: Codable {
 
 extension MotoCampaignPayment: Equatable  {
     static func == (a: MotoCampaignPayment, b: MotoCampaignPayment) -> Bool {
-        return
-        a.id == b.id &&
+        return a.id == b.id &&
         a.uuid == b.uuid &&
         a.detailUUID == b.detailUUID &&
         a.line == b.line &&

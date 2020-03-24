@@ -22,8 +22,7 @@ struct SubscriptionAdditionalData: Codable {
 
 extension SubscriptionAdditionalData: Equatable  {
     static func == (a: SubscriptionAdditionalData, b: SubscriptionAdditionalData) -> Bool {
-        return
-            a.operative == b.operative &&
+        return a.operative == b.operative &&
             a.cardUUID == b.cardUUID &&
             a.customerId == b.customerId &&
             a.service == b.service &&

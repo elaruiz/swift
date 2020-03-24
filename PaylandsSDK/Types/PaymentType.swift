@@ -20,9 +20,8 @@ struct PaymentType: Codable {
 }
 
 extension PaymentType: Equatable  {
-    static func == (a: PaymentAgent, b: PaymentAgent) -> Bool {
-        return
-            a.paymentAgentCode == b.paymentAgentCode &&
+    static func == (a: PaymentType, b: PaymentType) -> Bool {
+        return a.paymentAgentCode == b.paymentAgentCode &&
             a.paymentTypeCode == b.paymentTypeCode &&
             a.country == b.country &&
             a.currency == b.currency

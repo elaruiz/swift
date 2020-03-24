@@ -32,8 +32,7 @@ struct Card: Codable {
 
 extension Card: Equatable  {
     static func == (a: Card, b: Card) -> Bool {
-        return
-                a.branchCode == b.branchCode &&
+        return a.branchCode == b.branchCode &&
                 a.paymentAgentCode == b.paymentAgentCode &&
                 a.paymentAgentRegion == b.paymentAgentRegion &&
                 a.paymentAgentCountry == b.paymentAgentCountry &&

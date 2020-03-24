@@ -44,8 +44,7 @@ struct CustomerProfile: Codable {
 
 extension CustomerProfile: Equatable  {
     static func == (a: CustomerProfile, b: CustomerProfile) -> Bool {
-        return
-        a.firstName == b.firstName &&
+        return a.firstName == b.firstName &&
         a.lastName == b.lastName &&
         a.cardHolderName == b.cardHolderName &&
         a.documentIdentificationIssuer == b.documentIdentificationIssuer &&

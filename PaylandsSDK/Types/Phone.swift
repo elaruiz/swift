@@ -11,8 +11,7 @@ struct Phone: Codable {
 
 extension Phone: Equatable  {
     static func == (a: Phone, b: Phone) -> Bool {
-        return
-            a.prefix == b.prefix &&
+        return a.prefix == b.prefix &&
             a.number == b.number
     }
 }

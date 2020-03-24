@@ -24,8 +24,7 @@ struct CampaignDetail: Codable {
 
 extension CampaignDetail: Equatable  {
     static func == (a: CampaignDetail, b: CampaignDetail) -> Bool {
-        return
-        a.id == b.id &&
+        return a.id == b.id &&
         a.uuid == b.uuid &&
         a.description == b.description &&
         a.serviceUUID == b.serviceUUID &&

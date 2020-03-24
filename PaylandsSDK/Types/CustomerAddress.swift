@@ -26,8 +26,7 @@ struct CustomerAddress: Codable {
 
 extension CustomerAddress: Equatable  {
     static func == (a: CustomerAddress, b: CustomerAddress) -> Bool {
-        return
-            a.uuid == b.uuid &&
+        return a.uuid == b.uuid &&
             a.address1 == b.address1 &&
             a.address2 == b.address2 &&
             a.address3 == b.address3 &&

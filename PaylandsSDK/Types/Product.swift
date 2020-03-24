@@ -30,8 +30,7 @@ struct Product: Codable {
 
 extension Product: Equatable  {
     static func == (a: Product, b: Product) -> Bool {
-        return
-            a.serviceCode == b.serviceCode &&
+        return a.serviceCode == b.serviceCode &&
             a.originCountry == b.originCountry &&
             a.originCurrency == b.originCurrency &&
             a.destinationCountry == b.destinationCountry &&

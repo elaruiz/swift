@@ -19,8 +19,7 @@ struct RecipientAgent: Codable {
 
 extension RecipientAgent: Equatable  {
     static func == (a: RecipientAgent, b: RecipientAgent) -> Bool {
-        return
-            a.agentCode == b.agentCode &&
+        return a.agentCode == b.agentCode &&
             a.regionCode == b.regionCode &&
             a.branch == b.branch
     }

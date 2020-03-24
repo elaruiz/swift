@@ -37,8 +37,7 @@ struct Subscription: Codable {
 
 extension Subscription: Equatable  {
     static func == (a: Subscription, b: Subscription) -> Bool {
-        return
-            a.id == b.id &&
+        return a.id == b.id &&
             a.active == b.active &&
             a.status == b.status &&
             a.totalPayment == b.totalPayment &&

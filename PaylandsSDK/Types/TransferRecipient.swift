@@ -20,8 +20,7 @@ struct TransferRecipient: Codable {
 
 extension TransferRecipient: Equatable  {
     static func == (a: TransferRecipient, b: TransferRecipient) -> Bool {
-        return
-        a.externalId == b.externalId &&
+        return a.externalId == b.externalId &&
         a.addressUUID == b.addressUUID &&
         a.accountUUID == b.accountUUID
     }

@@ -31,8 +31,7 @@ struct Order: Codable {
 
 extension Order: Equatable  {
     static func == (a: Order, b: Order) -> Bool {
-        return
-        a.uuid == b.uuid &&
+        return a.uuid == b.uuid &&
         a.created == b.created &&
         a.createdFromClientTimezone == b.createdFromClientTimezone &&
         a.amount == b.amount &&
