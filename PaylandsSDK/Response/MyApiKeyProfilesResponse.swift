@@ -22,10 +22,3 @@ class MyApiKeyProfilesResponse: BaseResponse {
         try super.init(from: decoder)
     }
 }
-
-extension MyApiKeyProfilesResponse  {
-    static func == (a: MyApiKeyProfilesResponse, b: MyApiKeyProfilesResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.profiles == b.profiles
-    }
-}

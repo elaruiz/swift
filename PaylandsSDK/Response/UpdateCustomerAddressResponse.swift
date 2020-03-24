@@ -27,11 +27,3 @@ class UpdateCustomerAddressResponse: BaseResponse {
 
     }
 }
-
-extension UpdateCustomerAddressResponse  {
-    static func == (a: UpdateCustomerAddressResponse, b: UpdateCustomerAddressResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.customer == b.customer &&
-        a.address == b.address
-    }
-}

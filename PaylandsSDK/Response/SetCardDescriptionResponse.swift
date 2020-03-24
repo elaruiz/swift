@@ -27,11 +27,3 @@ class SetCardDescriptionResponse: BaseResponse {
     }
 
 }
-
-extension SetCardDescriptionResponse  {
-    static func == (a: SetCardDescriptionResponse, b: SetCardDescriptionResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.customer == b.customer &&
-        a.card == b.card
-    }
-}

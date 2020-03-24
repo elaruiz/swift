@@ -23,10 +23,3 @@ class SendRefundsFileResponse: BaseResponse {
 
     }
 }
-
-extension SendRefundsFileResponse  {
-    static func == (a: SendRefundsFileResponse, b: SendRefundsFileResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.errors == b.errors
-    }
-}

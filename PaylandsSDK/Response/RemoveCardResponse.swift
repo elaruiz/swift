@@ -6,8 +6,6 @@ import Foundation
 
 class RemoveCardResponse: BaseResponse {
 
-    static func == (a: RemoveCardResponse, b: RemoveCardResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse)
-    }
+
 
 }

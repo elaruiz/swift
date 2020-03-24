@@ -23,10 +23,3 @@ class RemoveCustomerAccountResponse: BaseResponse {
 
     }
 }
-
-extension RemoveCustomerAccountResponse  {
-    static func == (a: RemoveCustomerAccountResponse, b: RemoveCustomerAccountResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.customerAccount == b.customerAccount
-    }
-}

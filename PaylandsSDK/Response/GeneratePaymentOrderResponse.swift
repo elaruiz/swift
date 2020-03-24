@@ -30,12 +30,3 @@ class GeneratePaymentOrderResponse: BaseResponse {
 
     }
 }
-
-extension GeneratePaymentOrderResponse  {
-    static func == (a: GeneratePaymentOrderResponse, b: GeneratePaymentOrderResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.order == b.order &&
-        a.client == b.client &&
-        a.extraData == b.extraData
-    }
-}

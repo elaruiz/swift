@@ -7,9 +7,3 @@ import Foundation
 struct Client: Codable {
     private(set) var uuid: UUID
 }
-
-extension Client: Equatable  {
-    static func == (a: Client, b: Client) -> Bool {
-        return a.uuid == b.uuid
-    }
-}

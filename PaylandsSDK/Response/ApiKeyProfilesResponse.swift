@@ -23,9 +23,11 @@ class ApiKeyProfilesResponse: BaseResponse {
     }
 }
 
-extension ApiKeyProfilesResponse  {
-    static func == (a: ApiKeyProfilesResponse, b: ApiKeyProfilesResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.profiles == b.profiles
-    }
+extension ApiKeyProfilesResponse: Equatable  {
+  static func == (lhs: ApiKeyProfilesResponse, rhs: ApiKeyProfilesResponse) -> Bool {
+    return lhs.message == rhs.message &&
+    lhs.code == rhs.code &&
+    lhs.currentTime == rhs.currentTime &&
+    lhs.profiles == rhs.profiles
+ }
 }

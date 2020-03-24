@@ -24,19 +24,3 @@ struct CustomerAddress: Codable {
 
 }
 
-extension CustomerAddress: Equatable  {
-    static func == (a: CustomerAddress, b: CustomerAddress) -> Bool {
-        return a.uuid == b.uuid &&
-            a.address1 == b.address1 &&
-            a.address2 == b.address2 &&
-            a.address3 == b.address3 &&
-            a.city == b.city &&
-            a.stateCode == b.stateCode &&
-            a.country == b.country &&
-            a.zipCode == b.zipCode &&
-            a.type == b.type &&
-            a.default == b.default
-    }
-}
-
-

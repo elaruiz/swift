@@ -27,11 +27,3 @@ class ValidateTokenizedCardResponse: BaseResponse {
 
     }
 }
-
-extension ValidateTokenizedCardResponse  {
-    static func == (a: ValidateTokenizedCardResponse, b: ValidateTokenizedCardResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.customer == b.customer &&
-        a.card == b.card
-    }
-}

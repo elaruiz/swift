@@ -10,10 +10,3 @@ struct BatchError: Codable {
 
 }
 
-extension BatchError: Equatable  {
-    static func == (a: BatchError, b: BatchError) -> Bool {
-        return a.line == b.line &&
-        a.msg == b.msg
-    }
-}
-

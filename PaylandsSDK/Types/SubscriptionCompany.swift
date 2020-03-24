@@ -7,8 +7,8 @@ import Foundation
 struct SubscriptionCompany: Codable {
      private(set) var name: String
      private(set) var id: String
-     private(set) var createdAt: String
-     private(set) var updatedAt: String
+     private(set) var createdAt: CustomDate<DateTime>
+     private(set) var updatedAt: CustomDate<DateTime>
 
 
     enum CodingKeys: String, CodingKey {
@@ -18,14 +18,5 @@ struct SubscriptionCompany: Codable {
         case updatedAt = "updated_at"
     }
 
-}
-
-extension SubscriptionCompany: Equatable  {
-    static func == (a: SubscriptionCompany, b: SubscriptionCompany) -> Bool {
-        return a.name == b.name &&
-            a.id == b.id &&
-            a.createdAt == b.createdAt &&
-            a.updatedAt == b.updatedAt
-    }
 }
 

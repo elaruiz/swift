@@ -23,10 +23,3 @@ class RemoveSubscriptionPlanResponse: BaseResponse {
 
     }
 }
-
-extension RemoveSubscriptionPlanResponse  {
-    static func == (a: RemoveSubscriptionPlanResponse, b: RemoveSubscriptionPlanResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.deleted == b.deleted
-    }
-}

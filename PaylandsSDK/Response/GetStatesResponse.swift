@@ -23,10 +23,3 @@ class GetStatesResponse: BaseResponse {
 
     }
 }
-
-extension GetStatesResponse  {
-    static func == (a: GetStatesResponse, b: GetStatesResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.states == b.states
-    }
-}

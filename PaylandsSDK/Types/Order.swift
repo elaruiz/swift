@@ -6,8 +6,8 @@ import Foundation
 
 struct Order: Codable {
     private(set) var uuid: UUID
-    private(set) var created: String
-    private(set) var createdFromClientTimezone: String
+    private(set) var created: CustomDate<DateTimeFull>
+    private(set) var createdFromClientTimezone: CustomDate<DateTimeFull>
     private(set) var amount: Double
     private(set) var currency: String
     private(set) var paid: Bool
@@ -27,25 +27,5 @@ struct Order: Codable {
         case createdFromClientTimezone = "created_from_client_timezone"
     }
 
-}
-
-extension Order: Equatable  {
-    static func == (a: Order, b: Order) -> Bool {
-        return a.uuid == b.uuid &&
-        a.created == b.created &&
-        a.createdFromClientTimezone == b.createdFromClientTimezone &&
-        a.amount == b.amount &&
-        a.currency == b.currency &&
-        a.paid == b.paid &&
-        a.safe == b.safe &&
-        a.refunded == b.refunded &&
-        a.additional == b.additional &&
-        a.service == b.service &&
-        a.customer == b.customer &&
-        a.status == b.status &&
-        a.transactions == b.transactions &&
-        a.token == b.token &&
-        a.ip == b.ip
-    }
 }
 

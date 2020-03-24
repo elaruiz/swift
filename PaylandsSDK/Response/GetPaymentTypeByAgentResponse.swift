@@ -23,10 +23,3 @@ class GetPaymentTypeByAgentResponse: BaseResponse {
 
     }
 }
-
-extension GetPaymentTypeByAgentResponse  {
-    static func == (a: GetPaymentTypeByAgentResponse, b: GetPaymentTypeByAgentResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.paymentTypes == b.paymentTypes
-    }
-}

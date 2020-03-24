@@ -7,13 +7,13 @@ import Foundation
 struct SubscriptionPayment: Codable {
     private(set) var id: String
     private(set) var status: PaymentStatus
-    private(set) var paymentDate: String
+    private(set) var paymentDate: CustomDate<DateSimple>
     private(set) var paymentNumber: Int
     private(set) var attempt: Int
     private(set) var amount: Double
     private(set) var paymentDetails: String?
-    private(set) var createdAt: String
-    private(set) var updatedAt: String
+    private(set) var createdAt: CustomDate<DateTime>
+    private(set) var updatedAt: CustomDate<DateTime>
 
 
     enum CodingKeys: String, CodingKey {
@@ -25,19 +25,5 @@ struct SubscriptionPayment: Codable {
         case updatedAt = "updated_at"
     }
 
-}
-
-extension SubscriptionPayment: Equatable  {
-    static func == (a: SubscriptionPayment, b: SubscriptionPayment) -> Bool {
-        return a.id == b.id &&
-            a.status == b.status &&
-            a.paymentDate == b.paymentDate &&
-            a.paymentNumber == b.paymentNumber &&
-            a.attempt == b.attempt &&
-            a.amount == b.amount &&
-            a.paymentDetails == b.paymentDetails &&
-            a.createdAt == b.createdAt &&
-            a.updatedAt == b.updatedAt
-    }
 }
 

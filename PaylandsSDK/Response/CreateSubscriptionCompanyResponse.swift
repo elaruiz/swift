@@ -24,10 +24,3 @@ class CreateSubscriptionCompanyResponse: BaseResponse {
 
     }
 }
-
-extension CreateSubscriptionCompanyResponse  {
-    static func == (a: CreateSubscriptionCompanyResponse, b: CreateSubscriptionCompanyResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.company == b.company
-    }
-}

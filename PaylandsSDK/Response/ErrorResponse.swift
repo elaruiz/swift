@@ -4,7 +4,7 @@
 
 import Foundation
 
-class ErrorResponse: Decodable {
+class ErrorResponse {
     private(set) var message: String
     private(set) var code: Int
     private(set) var details: String

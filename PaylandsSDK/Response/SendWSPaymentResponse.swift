@@ -30,12 +30,3 @@ class SendWSPaymentResponse: BaseResponse {
 
     }
 }
-
-extension SendWSPaymentResponse  {
-    static func == (a: SendWSPaymentResponse, b: SendWSPaymentResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.order == b.order &&
-        a.client == b.client &&
-        a.extraData == b.extraData
-    }
-}

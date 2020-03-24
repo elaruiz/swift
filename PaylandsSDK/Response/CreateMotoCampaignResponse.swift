@@ -26,11 +26,3 @@ class CreateMotoCampaignResponse: BaseResponse {
 
     }
 }
-
-extension CreateMotoCampaignResponse  {
-    static func == (a: CreateMotoCampaignResponse, b: CreateMotoCampaignResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.detail == b.detail &&
-        a.payments == b.payments
-    }
-}
