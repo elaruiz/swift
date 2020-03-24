@@ -15,3 +15,10 @@ struct Customer: Codable {
 
 }
 
+extension Customer: Equatable  {
+    static func == (a: Customer, b: Customer) -> Bool {
+        return a.token == b.token &&
+        a.externalId == b.externalId
+    }
+}
+

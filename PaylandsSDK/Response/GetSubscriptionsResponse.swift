@@ -23,3 +23,10 @@ class GetSubscriptionsResponse: BaseResponse {
 
     }
 }
+
+extension GetSubscriptionsResponse  {
+    static func == (a: GetSubscriptionsResponse, b: GetSubscriptionsResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.subscriptions == b.subscriptions
+    }
+}

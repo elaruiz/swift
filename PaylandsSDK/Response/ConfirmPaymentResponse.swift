@@ -26,3 +26,11 @@ class ConfirmPaymentResponse: BaseResponse {
 
     }
 }
+
+extension ConfirmPaymentResponse  {
+    static func == (a: ConfirmPaymentResponse, b: ConfirmPaymentResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.order == b.order &&
+        a.client == b.client
+    }
+}

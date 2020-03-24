@@ -26,3 +26,11 @@ class GetOrdersResponse: BaseResponse {
 
     }
 }
+
+extension GetOrdersResponse  {
+    static func == (a: GetOrdersResponse, b: GetOrdersResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.count == b.count &&
+        a.transactions == b.transactions
+    }
+}

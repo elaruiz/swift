@@ -18,3 +18,12 @@ struct Antifraud: Codable {
 
 }
 
+extension Antifraud: Equatable  {
+    static func == (a: Antifraud, b: Antifraud) -> Bool {
+        return a.evaluation == b.evaluation &&
+        a.score == b.score &&
+        a.riskScore == b.riskScore &&
+        a.fraudScore == b.fraudScore
+    }
+}
+

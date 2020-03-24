@@ -23,3 +23,10 @@ class GetBranchesResponse: BaseResponse {
 
     }
 }
+
+extension GetBranchesResponse  {
+    static func == (a: GetBranchesResponse, b: GetBranchesResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.branches == b.branches
+    }
+}

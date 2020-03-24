@@ -13,10 +13,9 @@ struct SubscriptionPlan: Codable {
      private(set) var trialAvailable: Bool? = nil
      private(set) var intervalOffset: Int?
      private(set) var subscriptionIntervalOffset: SubscriptionInterval?
-     private(set) var createdAt: CustomDate<DateTime>
-     private(set) var updatedAt: CustomDate<DateTime>
+     private(set) var createdAt: String
+     private(set) var updatedAt: String
      private(set) var product: SubscriptionProduct
-
 
 
     enum CodingKeys: String, CodingKey {
@@ -32,3 +31,19 @@ struct SubscriptionPlan: Codable {
 
 }
 
+extension SubscriptionPlan: Equatable  {
+    static func == (a: SubscriptionPlan, b: SubscriptionPlan) -> Bool {
+        return
+            a.name == b.name &&
+            a.externalId == b.externalId &&
+            a.amount == b.amount &&
+            a.interval == b.interval &&
+            a.subscriptionInterval == b.subscriptionInterval &&
+            a.trialAvailable == b.trialAvailable &&
+            a.intervalOffset == b.intervalOffset &&
+            a.subscriptionIntervalOffset == b.subscriptionIntervalOffset &&
+            a.createdAt == b.createdAt &&
+            a.updatedAt == b.updatedAt &&
+            a.product == b.product
+    }
+}

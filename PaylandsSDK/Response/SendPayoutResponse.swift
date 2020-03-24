@@ -26,3 +26,11 @@ class SendPayoutResponse: BaseResponse {
 
     }
 }
+
+extension SendPayoutResponse  {
+    static func == (a: SendPayoutResponse, b: SendPayoutResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.order == b.order &&
+        a.client == b.client
+    }
+}

@@ -30,3 +30,12 @@ class SendOneStepPaymentResponse: BaseResponse {
 
     }
 }
+
+extension SendOneStepPaymentResponse  {
+    static func == (a: SendOneStepPaymentResponse, b: SendOneStepPaymentResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.order == b.order &&
+        a.client == b.client &&
+        a.extraData == b.extraData
+    }
+}

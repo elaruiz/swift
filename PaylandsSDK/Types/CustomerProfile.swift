@@ -16,12 +16,12 @@ struct CustomerProfile: Codable {
     private(set) var homePhone: Phone?
     private(set) var workPhone: Phone?
     private(set) var mobilePhone: Phone?
-    private(set) var birthdate: CustomDate<DateSimple>?
+    private(set) var birthdate: String?
     private(set) var sourceOfFunds: String?
     private(set) var occupation: String?
     private(set) var socialSecurityNumber: String?
-    private(set) var createdAt: CustomDate<DateTime>
-    private(set) var updatedAt: CustomDate<DateTime>
+    private(set) var createdAt: String
+    private(set) var updatedAt: String
 
     enum CodingKeys: String, CodingKey {
         case email, phone, birthdate, occupation
@@ -40,5 +40,28 @@ struct CustomerProfile: Codable {
         case updatedAt = "updated_at"
     }
 
+}
+
+extension CustomerProfile: Equatable  {
+    static func == (a: CustomerProfile, b: CustomerProfile) -> Bool {
+        return
+        a.firstName == b.firstName &&
+        a.lastName == b.lastName &&
+        a.cardHolderName == b.cardHolderName &&
+        a.documentIdentificationIssuer == b.documentIdentificationIssuer &&
+        a.documentIdentificationType == b.documentIdentificationType &&
+        a.documentIdentificationNumber == b.documentIdentificationNumber &&
+        a.email == b.email &&
+        a.phone == b.phone &&
+        a.homePhone == b.homePhone &&
+        a.workPhone == b.workPhone &&
+        a.mobilePhone == b.mobilePhone &&
+        a.birthdate == b.birthdate &&
+        a.sourceOfFunds == b.sourceOfFunds &&
+        a.occupation == b.occupation &&
+        a.socialSecurityNumber == b.socialSecurityNumber &&
+        a.createdAt == b.createdAt &&
+        a.updatedAt == b.updatedAt
+    }
 }
 

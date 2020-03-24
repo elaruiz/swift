@@ -9,3 +9,10 @@ struct TransferAdditional: Codable {
 
 }
 
+extension TransferAdditional: Equatable  {
+    static func == (a: TransferAdditional, b: TransferAdditional) -> Bool {
+        return
+            a.reason == b.reason
+    }
+}
+

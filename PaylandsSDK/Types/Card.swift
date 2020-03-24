@@ -18,7 +18,7 @@ struct Card: Codable {
     private(set) var expireYear: String
     private(set) var additional: String? = nil
     private(set) var bank: String
-    private(set) var validationDate: CustomDate<DateTime>? = nil
+    private(set) var validationDate: String = nil
     private(set) var prepaid: String? = nil
 
     enum CodingKeys: String, CodingKey {
@@ -28,6 +28,23 @@ struct Card: Codable {
         case validationDate = "validation_date"
     }
 
+}
+
+extension Card: Equatable  {
+    static func == (a: Card, b: Card) -> Bool {
+        return
+                a.branchCode == b.branchCode &&
+                a.paymentAgentCode == b.paymentAgentCode &&
+                a.paymentAgentRegion == b.paymentAgentRegion &&
+                a.paymentAgentCountry == b.paymentAgentCountry &&
+                a.paymentAgentState == b.paymentAgentState &&
+                a.paymentAgentCity == b.paymentAgentCity &&
+                a.paymentAgentAddress == b.paymentAgentAddress &&
+                a.paymentAgentZipCode == b.paymentAgentZipCode &&
+                a.paymentAgentPhone == b.paymentAgentPhone &&
+                a.branchDescription == b.branchDescription &&
+                a.paymentAgentSchedule == b.paymentAgentSchedule
+    }
 }
 
 

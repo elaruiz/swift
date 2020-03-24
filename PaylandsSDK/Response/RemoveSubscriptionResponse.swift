@@ -23,3 +23,10 @@ class RemoveSubscriptionResponse: BaseResponse {
 
     }
 }
+
+extension RemoveSubscriptionResponse  {
+    static func == (a: RemoveSubscriptionResponse, b: RemoveSubscriptionResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.deleted == b.deleted
+    }
+}

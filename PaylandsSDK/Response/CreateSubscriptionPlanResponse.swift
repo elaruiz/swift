@@ -23,3 +23,10 @@ class CreateSubscriptionPlanResponse: BaseResponse {
 
     }
 }
+
+extension CreateSubscriptionPlanResponse  {
+    static func == (a: CreateSubscriptionPlanResponse, b: CreateSubscriptionPlanResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.plan == b.plan
+    }
+}

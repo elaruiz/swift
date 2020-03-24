@@ -28,3 +28,11 @@ class BaseResponse: Decodable {
 
     }
 }
+
+extension BaseResponse: Equatable {
+    static func == (a: BaseResponse, b: BaseResponse) -> Bool {
+        return a.message == b.message &&
+        a.code == b.code &&
+        a.currentTime == b.currentTime
+    }
+}

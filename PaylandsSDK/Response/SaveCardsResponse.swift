@@ -23,3 +23,10 @@ class SaveCardsResponse: BaseResponse {
 
     }
 }
+
+extension SaveCardsResponse  {
+    static func == (a: SaveCardsResponse, b: SaveCardsResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.cards == b.cards
+    }
+}

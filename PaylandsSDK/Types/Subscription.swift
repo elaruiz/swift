@@ -11,11 +11,11 @@ struct Subscription: Codable {
     private(set) var totalPayment: Double
     private(set) var totalPaymentCharged: Double
     private(set) var paymentAttemptsLimit: Int
-    private(set) var firstChargeDate: CustomDate<DateTime>
-    private(set) var nextChargeDate: CustomDate<DateTime>
+    private(set) var firstChargeDate: String
+    private(set) var nextChargeDate: String
     private(set) var additionalData: String
-    private(set) var createdAt: CustomDate<DateTime>
-    private(set) var updatedAt: CustomDate<DateTime>
+    private(set) var createdAt: String
+    private(set) var updatedAt: String
     private(set) var plan: SubscriptionPlan
     private(set) var payments: [SubscriptionPayment]
 
@@ -32,6 +32,25 @@ struct Subscription: Codable {
         case updatedAt = "updated_at"
         case plan = "plan"
         case payments = "payments"
+    }
+}
+
+extension Subscription: Equatable  {
+    static func == (a: Subscription, b: Subscription) -> Bool {
+        return
+            a.id == b.id &&
+            a.active == b.active &&
+            a.status == b.status &&
+            a.totalPayment == b.totalPayment &&
+            a.totalPaymentCharged == b.totalPaymentCharged &&
+            a.paymentAttemptsLimit == b.paymentAttemptsLimit &&
+            a.firstChargeDate == b.firstChargeDate &&
+            a.nextChargeDate == b.nextChargeDate &&
+            a.additionalData == b.additionalData &&
+            a.createdAt == b.createdAt &&
+            a.updatedAt == b.updatedAt &&
+            a.plan == b.plan &&
+            a.payments == b.payments
     }
 }
 

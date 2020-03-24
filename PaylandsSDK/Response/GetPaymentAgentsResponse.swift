@@ -23,3 +23,10 @@ class GetPaymentAgentsResponse: BaseResponse {
 
     }
 }
+
+extension GetPaymentAgentsResponse  {
+    static func == (a: GetPaymentAgentsResponse, b: GetPaymentAgentsResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.agents == b.agents
+    }
+}

@@ -5,5 +5,7 @@
 import Foundation
 
 class TransferResponse: BaseResponse {
-    
+    static func == (a: TransferResponse, b: TransferResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse)
+    }
 }

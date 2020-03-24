@@ -9,8 +9,8 @@ struct SubscriptionProduct: Codable {
      private(set) var externalId: String
      private(set) var sandbox: Bool
      private(set) var notificationUrl: String? = nil
-     private(set) var createdAt: CustomDate<DateTime>
-     private(set) var updatedAt: CustomDate<DateTime>
+     private(set) var createdAt: String
+     private(set) var updatedAt: String
 
 
     enum CodingKeys: String, CodingKey {
@@ -23,3 +23,14 @@ struct SubscriptionProduct: Codable {
 
 }
 
+extension SubscriptionProduct: Equatable  {
+    static func == (a: SubscriptionProduct, b: SubscriptionProduct) -> Bool {
+        return
+            a.name == b.name &&
+            a.externalId == b.externalId &&
+            a.sandbox == b.sandbox &&
+            a.notificationUrl == b.notificationUrl &&
+            a.createdAt == b.createdAt &&
+            a.updatedAt == b.updatedAt
+    }
+}

@@ -23,3 +23,10 @@ class GetCustomerAddressResponse: BaseResponse {
 
     }
 }
+
+extension GetCustomerAddressResponse  {
+    static func == (a: GetCustomerAddressResponse, b: GetCustomerAddressResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.address == b.address
+    }
+}

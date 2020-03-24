@@ -15,3 +15,11 @@ struct TransferLocation: Codable {
 
 }
 
+extension TransferLocation: Equatable  {
+    static func == (a: TransferLocation, b: TransferLocation) -> Bool {
+        return
+                a.country == b.country &&
+                a.currency == b.currency
+    }
+}
+

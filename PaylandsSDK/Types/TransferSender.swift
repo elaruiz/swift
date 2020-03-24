@@ -20,3 +20,13 @@ struct TransferSender: Codable {
 
 }
 
+extension TransferSender: Equatable  {
+    static func == (a: TransferSender, b: TransferSender) -> Bool {
+        return
+        a.externalId == b.externalId &&
+        a.bankCode == b.bankCode &&
+        a.addressUUID == b.addressUUID &&
+        a.accountUUID == b.accountUUID
+    }
+}
+

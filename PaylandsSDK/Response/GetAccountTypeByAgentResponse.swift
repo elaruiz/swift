@@ -23,3 +23,10 @@ class GetAccountTypeByAgentResponse: BaseResponse {
 
     }
 }
+
+extension GetAccountTypeByAgentResponse  {
+    static func == (a: GetAccountTypeByAgentResponse, b: GetAccountTypeByAgentResponse) -> Bool {
+        return (a as BaseResponse) == (b as BaseResponse) &&
+        a.accounts == b.accounts
+    }
+}
