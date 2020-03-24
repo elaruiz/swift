@@ -10,12 +10,13 @@ protocol PaylandsClientProtocol {
 
     func getApiKeyProfiles(_ result: @escaping (Result<ApiKeyProfilesResponse, HTTPNetworkError>) -> Void)
 
-   /* func getMyApiKeyProfile() -> MyApiKeyProfilesResponse
+    func getMyApiKeyProfiles(_ result: @escaping (Result<MyApiKeyProfilesResponse, HTTPNetworkError>) -> Void)
 
     // Api Keys //
 
     // MoTo Campaign //
 
+    /*
     func createMotoCampaign(_ request: CreateMotoCampaignRequest) -> CreateMotoCampaignResponse
 
     // MoTo Campaign //

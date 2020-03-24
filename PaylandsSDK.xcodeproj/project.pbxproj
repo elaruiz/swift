@@ -12,6 +12,8 @@
 		AE166B582421255000B75D53 /* PaylandsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AE166B4A2421255000B75D53 /* PaylandsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE3F6D2024214A5A006268D3 /* PaylandsClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */; };
 		AE3F6D2324214E74006268D3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D2224214E74006268D3 /* Networking.swift */; };
+		AE48F79B242A49FC00C6268B /* MyApiKeyProfilesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475CC24212DB800FF5C46 /* MyApiKeyProfilesResponse.swift */; };
+		AE48F79D242A4A7600C6268B /* MyApiKeyProfilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48F79C242A4A7600C6268B /* MyApiKeyProfilesTests.swift */; };
 		AE5C7089242906E8002E1950 /* ApiKeyProfilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */; };
 		AE64750C242127F600FF5C46 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474EC242127F500FF5C46 /* Client.swift */; };
 		AE64750D242127F600FF5C46 /* TransferRecipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6474ED242127F500FF5C46 /* TransferRecipient.swift */; };
@@ -198,6 +200,7 @@
 		AE166B572421255000B75D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClientProtocol.swift; sourceTree = "<group>"; };
 		AE3F6D2224214E74006268D3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		AE48F79C242A4A7600C6268B /* MyApiKeyProfilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiKeyProfilesTests.swift; sourceTree = "<group>"; };
 		AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyProfilesTests.swift; sourceTree = "<group>"; };
 		AE6474EC242127F500FF5C46 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AE6474ED242127F500FF5C46 /* TransferRecipient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRecipient.swift; sourceTree = "<group>"; };
@@ -447,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5C7088242906E8002E1950 /* ApiKeyProfilesTests.swift */,
+				AE48F79C242A4A7600C6268B /* MyApiKeyProfilesTests.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -957,7 +961,9 @@
 				AE5C7089242906E8002E1950 /* ApiKeyProfilesTests.swift in Sources */,
 				AEAC424B2428D2400093484F /* PaylandsClientMock.swift in Sources */,
 				AEAC42512428D6320093484F /* ApiKeyProfilesResponse.swift in Sources */,
+				AE48F79D242A4A7600C6268B /* MyApiKeyProfilesTests.swift in Sources */,
 				AEAC42532428D6D10093484F /* BaseResponse.swift in Sources */,
+				AE48F79B242A49FC00C6268B /* MyApiKeyProfilesResponse.swift in Sources */,
 				AE166B562421255000B75D53 /* PaylandsSDKTests.swift in Sources */,
 				AEAC42502428D5D60093484F /* PaylandsClientProtocol.swift in Sources */,
 			);
