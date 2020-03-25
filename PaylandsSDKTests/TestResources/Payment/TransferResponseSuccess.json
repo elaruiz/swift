@@ -50,7 +50,7 @@
           "score" : 0,
           "risk_score": 150,
           "fraud_score": 250
-        }
+        },
       }
     ],
     "token": "13d7103424f60825bb2696e00e2ba83da9a033b8fa3609c15dea7fb65066b09d719b7006a18368fb3dbb72844e7a8b89775c89ef31e0926ee0ab46c222bbba6b",

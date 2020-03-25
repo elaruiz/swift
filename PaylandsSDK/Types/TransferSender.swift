@@ -7,8 +7,8 @@ import Foundation
 struct TransferSender: Codable {
     private(set) var externalId: String
     private(set) var bankCode: String
-    private(set) var addressUUID: String
-    private(set) var accountUUID: String
+    private(set) var addressUUID: UUID
+    private(set) var accountUUID: UUID
 
 
     enum CodingKeys: String, CodingKey {

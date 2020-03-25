@@ -566,6 +566,7 @@
 				AEAC424C2428D3180093484F /* Network */,
 				AE6475BC24212CAC00FF5C46 /* Response */,
 				AE6474EB242126CF00FF5C46 /* Types */,
+				AE64755F24212B9A00FF5C46 /* Request */,
 				AE64755124212A0F00FF5C46 /* Utils */,
 				AE166B4A2421255000B75D53 /* PaylandsSDK.h */,
 				AE166B4B2421255000B75D53 /* Info.plist */,
@@ -662,7 +663,6 @@
 				AE6474ED242127F500FF5C46 /* TransferRecipient.swift */,
 				AE6474FB242127F600FF5C46 /* TransferSender.swift */,
 				AEFB40C4242B61C5000D0938 /* Payment.swift */,
-				AE64755F24212B9A00FF5C46 /* Request */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -765,7 +765,8 @@
 				AE64756224212C7700FF5C46 /* UpdateCustomerProfileRequest.swift */,
 				AE64756424212C7700FF5C46 /* ValidateTokenizedCardRequest.swift */,
 			);
-			path = Request;
+			name = Request;
+			path = Types/Request;
 			sourceTree = "<group>";
 		};
 		AE6475BC24212CAC00FF5C46 /* Response */ = {

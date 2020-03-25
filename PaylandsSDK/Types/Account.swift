@@ -5,7 +5,7 @@
 import Foundation
 
 struct Account: Codable {
-    private(set) var uuid: String
+    private(set) var uuid: UUID
     private(set) var accountType: AccountType
     private(set) var accountNumber: String
 
