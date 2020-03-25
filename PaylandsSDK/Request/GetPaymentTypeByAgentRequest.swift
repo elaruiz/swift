@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetPaymentTypeByAgentRequest: Encodable {
-    private(set) var serviceUUID: String
+    private(set) var serviceUUID: UUID
     private(set) var paymentAgentCd: String? = nil
 
 

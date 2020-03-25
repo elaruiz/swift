@@ -113,7 +113,6 @@
 		AE48F7FE242A61B300C6268B /* SendWSPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E824212DB900FF5C46 /* SendWSPaymentResponse.swift */; };
 		AE48F7FF242A61B300C6268B /* SetCardDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475C024212DB700FF5C46 /* SetCardDescriptionResponse.swift */; };
 		AE48F800242A61B300C6268B /* SubscribeCustomerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6475E024212DB900FF5C46 /* SubscribeCustomerResponse.swift */; };
-		AE48F801242A621900C6268B /* CancelPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */; };
 		AE48F802242A621900C6268B /* ConfirmPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757024212C7700FF5C46 /* ConfirmPaymentRequest.swift */; };
 		AE48F803242A621900C6268B /* CreateCustomerAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756024212C7600FF5C46 /* CreateCustomerAccountRequest.swift */; };
 		AE48F804242A621900C6268B /* CreateCustomerAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64756A24212C7700FF5C46 /* CreateCustomerAddressRequest.swift */; };
@@ -250,7 +249,6 @@
 		AE6475A924212C7800FF5C46 /* GeneratePaymentOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757B24212C7700FF5C46 /* GeneratePaymentOrderRequest.swift */; };
 		AE6475AA24212C7800FF5C46 /* GetCustomerProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757C24212C7800FF5C46 /* GetCustomerProfileRequest.swift */; };
 		AE6475AB24212C7800FF5C46 /* GetPaymentAgentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757D24212C7800FF5C46 /* GetPaymentAgentsRequest.swift */; };
-		AE6475AC24212C7800FF5C46 /* CancelPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */; };
 		AE6475AD24212C7800FF5C46 /* RemoveCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64757F24212C7800FF5C46 /* RemoveCardRequest.swift */; };
 		AE6475AE24212C7800FF5C46 /* SubscribeCustomerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758024212C7800FF5C46 /* SubscribeCustomerRequest.swift */; };
 		AE6475AF24212C7800FF5C46 /* TransferRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64758124212C7800FF5C46 /* TransferRequest.swift */; };
@@ -321,6 +319,7 @@
 		AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1B242160850099C177 /* ClientSettings.swift */; };
 		AE64BE1E242163AC0099C177 /* PaylandsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64BE1D242163AC0099C177 /* PaylandsClient.swift */; };
 		AE7F9274242A7F4200363D72 /* MotoCampaignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F9273242A7F4200363D72 /* MotoCampaignTests.swift */; };
+		AE911CB2242BE81400F5D869 /* CancelPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE911CB1242BE81400F5D869 /* CancelPaymentRequest.swift */; };
 		AEAC424B2428D2400093484F /* PaylandsClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC424A2428D2400093484F /* PaylandsClientMock.swift */; };
 		AEAC424F2428D37B0093484F /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */; };
 		AEAC42502428D5D60093484F /* PaylandsClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6D1F24214A5A006268D3 /* PaylandsClientProtocol.swift */; };
@@ -444,7 +443,6 @@
 		AE64757B24212C7700FF5C46 /* GeneratePaymentOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePaymentOrderRequest.swift; sourceTree = "<group>"; };
 		AE64757C24212C7800FF5C46 /* GetCustomerProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCustomerProfileRequest.swift; sourceTree = "<group>"; };
 		AE64757D24212C7800FF5C46 /* GetPaymentAgentsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaymentAgentsRequest.swift; sourceTree = "<group>"; };
-		AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPaymentRequest.swift; sourceTree = "<group>"; };
 		AE64757F24212C7800FF5C46 /* RemoveCardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveCardRequest.swift; sourceTree = "<group>"; };
 		AE64758024212C7800FF5C46 /* SubscribeCustomerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeCustomerRequest.swift; sourceTree = "<group>"; };
 		AE64758124212C7800FF5C46 /* TransferRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferRequest.swift; sourceTree = "<group>"; };
@@ -515,6 +513,7 @@
 		AE64BE1B242160850099C177 /* ClientSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettings.swift; sourceTree = "<group>"; };
 		AE64BE1D242163AC0099C177 /* PaylandsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClient.swift; sourceTree = "<group>"; };
 		AE7F9273242A7F4200363D72 /* MotoCampaignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoCampaignTests.swift; sourceTree = "<group>"; };
+		AE911CB1242BE81400F5D869 /* CancelPaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPaymentRequest.swift; sourceTree = "<group>"; };
 		AEAC424A2428D2400093484F /* PaylandsClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaylandsClientMock.swift; sourceTree = "<group>"; };
 		AEAC424E2428D37B0093484F /* HTTPNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkError.swift; sourceTree = "<group>"; };
 		AEEA687024296AF800776966 /* TestResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestResources; sourceTree = "<group>"; };
@@ -718,7 +717,7 @@
 		AE64755F24212B9A00FF5C46 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				AE64757E24212C7800FF5C46 /* CancelPaymentRequest.swift */,
+				AE911CB1242BE81400F5D869 /* CancelPaymentRequest.swift */,
 				AE64757024212C7700FF5C46 /* ConfirmPaymentRequest.swift */,
 				AE64756024212C7600FF5C46 /* CreateCustomerAccountRequest.swift */,
 				AE64756A24212C7700FF5C46 /* CreateCustomerAddressRequest.swift */,
@@ -765,8 +764,7 @@
 				AE64756224212C7700FF5C46 /* UpdateCustomerProfileRequest.swift */,
 				AE64756424212C7700FF5C46 /* ValidateTokenizedCardRequest.swift */,
 			);
-			name = Request;
-			path = Types/Request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		AE6475BC24212CAC00FF5C46 /* Response */ = {
@@ -1026,7 +1024,6 @@
 				AE6475FD24212DBA00FF5C46 /* GetCardResponse.swift in Sources */,
 				AE647511242127F600FF5C46 /* Subscription.swift in Sources */,
 				AE64BE1C242160850099C177 /* ClientSettings.swift in Sources */,
-				AE6475AC24212C7800FF5C46 /* CancelPaymentRequest.swift in Sources */,
 				AE647521242127F600FF5C46 /* Customer.swift in Sources */,
 				AE64758F24212C7800FF5C46 /* SendWSPaymentRequest.swift in Sources */,
 				AE64750D242127F600FF5C46 /* TransferRecipient.swift in Sources */,
@@ -1120,6 +1117,7 @@
 				AE64755D24212AA800FF5C46 /* DateTimeFull.swift in Sources */,
 				AE647525242127F600FF5C46 /* TransferLocation.swift in Sources */,
 				AE64759D24212C7800FF5C46 /* CreateSubscriptionProductRequest.swift in Sources */,
+				AE911CB2242BE81400F5D869 /* CancelPaymentRequest.swift in Sources */,
 				AE64760224212DBA00FF5C46 /* UpdateCustomerAccountResponse.swift in Sources */,
 				AE6475AD24212C7800FF5C46 /* RemoveCardRequest.swift in Sources */,
 				AE647526242127F600FF5C46 /* PaymentAgent.swift in Sources */,
@@ -1172,7 +1170,6 @@
 				AE48F80C242A621900C6268B /* GetBranchesRequest.swift in Sources */,
 				AE48F7AA242A613000C6268B /* DocumentIdentificationType.swift in Sources */,
 				AE48F7C0242A613000C6268B /* CustomerAddress.swift in Sources */,
-				AE48F801242A621900C6268B /* CancelPaymentRequest.swift in Sources */,
 				AE48F80B242A621900C6268B /* GetAccountTypeByAgentRequest.swift in Sources */,
 				AE48F7B3242A613000C6268B /* SubscriptionInterval.swift in Sources */,
 				AEFB40C7242B63E6000D0938 /* SendWSPaymentRequest.swift in Sources */,

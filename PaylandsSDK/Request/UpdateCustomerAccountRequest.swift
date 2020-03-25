@@ -5,7 +5,7 @@
 import Foundation
 
 struct UpdateCustomerAccountRequest: Encodable {
-    private(set) var accountUUID: String
+    private(set) var accountUUID: UUID
     private(set) var customerId: String
     private(set) var accountType: AccountType
     private(set) var accountNumber: String

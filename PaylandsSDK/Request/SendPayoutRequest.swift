@@ -5,8 +5,8 @@
 import Foundation
 
 struct SendPayoutRequest: Encodable {
-    private(set) var orderUUID: String
-    private(set) var sourceUUID: String
+    private(set) var orderUUID: UUID
+    private(set) var sourceUUID: UUID
 
 
     enum CodingKeys: String, CodingKey {

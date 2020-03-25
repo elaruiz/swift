@@ -5,8 +5,8 @@
 import Foundation
 
 struct TransferRequest: Encodable {
-    private(set) var orderUUID: String
-    private(set) var serviceUUID: String
+    private(set) var orderUUID: UUID
+    private(set) var serviceUUID: UUID
     private(set) var sender: TransferSender
     private(set) var recipient: TransferRecipient
     private(set) var paymentType: PaymentTypeCode

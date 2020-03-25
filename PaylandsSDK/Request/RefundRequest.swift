@@ -5,7 +5,7 @@
 import Foundation
 
 struct RefundRequest: Encodable {
-    private(set) var orderUUID: String
+    private(set) var orderUUID: UUID
     private(set) var amount: Decimal? = nil
 
     enum CodingKeys: String, CodingKey {
