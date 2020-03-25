@@ -6,8 +6,8 @@ import Foundation
 
 struct ValidateTokenizedCardRequest: Encodable {
     private(set) var customerId: String
-    private(set) var service: UUID
-    private(set) var sourceUUID: UUID
+    private(set) var service: String
+    private(set) var sourceUUID: String
     private(set) var cardCvv: String? = nil
 
 

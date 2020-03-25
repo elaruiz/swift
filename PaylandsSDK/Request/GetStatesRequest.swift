@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetStatesRequest: Encodable {
-    private(set) var serviceUUID: UUID
+    private(set) var serviceUUID: String
     private(set) var country: String
 
 
