@@ -5,7 +5,7 @@
 import Foundation
 
 struct Transaction: Codable {
-    private(set) var uuid: UUID
+    private(set) var uuid: String
     private(set) var created: String
     private(set) var createdFromClientTimezone: String
     private(set) var operative: Operative
@@ -22,5 +22,19 @@ struct Transaction: Codable {
         case createdFromClientTimezone = "created_from_client_timezone"
     }
 
+}
+extension Transaction: Equatable  {
+    static func == (a: Transaction, b: Transaction) -> Bool {
+        return a.uuid == b.uuid &&
+        a.created == b.created &&
+        a.createdFromClientTimezone == b.createdFromClientTimezone &&
+        a.operative == b.operative &&
+        a.amount == b.amount &&
+        a.authorization == b.authorization &&
+        a.status == b.status &&
+        a.error == b.error &&
+        a.antifraud == b.antifraud &&
+        a.card == b.card
+    }
 }
 

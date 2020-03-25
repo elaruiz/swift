@@ -5,5 +5,11 @@
 import Foundation
 
 struct Client: Codable {
-    private(set) var uuid: UUID
+    private(set) var uuid: String
+}
+
+extension Client: Equatable  {
+    static func == (a: Client, b: Client) -> Bool {
+        return a.uuid == b.uuid
+    }
 }

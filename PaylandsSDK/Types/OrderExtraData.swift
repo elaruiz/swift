@@ -6,11 +6,13 @@ import Foundation
 
 struct OrderExtraData: Codable {
 
-    struct Payment: Codable {
-        private(set) var installments: Int
-    }
-
     private(set) var payment: Payment
 
+}
+
+extension OrderExtraData: Equatable  {
+    static func == (a: OrderExtraData, b: OrderExtraData) -> Bool {
+        return a.payment == b.payment
+    }
 }
 

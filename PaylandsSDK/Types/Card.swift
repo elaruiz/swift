@@ -6,13 +6,13 @@ import Foundation
 
 struct Card: Codable {
     private(set) var object: String
-    private(set) var uuid: UUID
+    private(set) var uuid: String
     private(set) var type: CardType
     private(set) var token: String
     private(set) var brand: String
     private(set) var country: String
     private(set) var holder: String
-    private(set) var bin: Int
+    private(set) var bin: String
     private(set) var last4: String
     private(set) var expireMonth: String
     private(set) var expireYear: String
@@ -30,4 +30,22 @@ struct Card: Codable {
 
 }
 
-
+extension Card: Equatable  {
+    static func == (a: Card, b: Card) -> Bool {
+        return a.object == b.object &&
+        a.uuid == b.uuid &&
+        a.type == b.type &&
+        a.token == b.token &&
+        a.brand == b.brand &&
+        a.country == b.country &&
+        a.holder == b.holder &&
+        a.bin == b.bin &&
+        a.last4 == b.last4 &&
+        a.expireMonth == b.expireMonth &&
+        a.expireYear == b.expireYear &&
+        a.additional == b.additional &&
+        a.bank == b.bank &&
+        a.validationDate == b.validationDate &&
+        a.prepaid == b.prepaid
+    }
+}

@@ -5,8 +5,8 @@
 import Foundation
 
 struct SendWSPaymentRequest: Encodable {
-    private(set) var orderUUID: UUID
-    private(set) var cardUUID: UUID
+    private(set) var orderUUID: String
+    private(set) var cardUUID: String
     private(set) var customerIp: String? = nil
 
 
