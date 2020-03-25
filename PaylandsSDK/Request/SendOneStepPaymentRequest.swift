@@ -15,7 +15,7 @@ struct SendOneStepPaymentRequest: Encodable {
     private(set) var urlPost: String
     private(set) var urlOk: String
     private(set) var urlKo: String
-    private(set) var templateUUID: String
+    private(set) var templateUUID: UUID
     private(set) var cardHolder: String
     private(set) var cardPan: String
     private(set) var cardExpiryYear: Int = 0

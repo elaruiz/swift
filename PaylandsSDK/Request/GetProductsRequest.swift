@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetProductsRequest: Encodable {
-    private(set) var serviceUUID: String
+    private(set) var serviceUUID: UUID
     private(set) var paymentTypeCd: String
 
 

@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetBranchesRequest: Encodable {
-    private(set) var serviceUUID: String
+    private(set) var serviceUUID: UUID
     private(set) var payAgentCd: String
 
 

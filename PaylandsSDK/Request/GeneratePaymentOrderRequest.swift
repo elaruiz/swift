@@ -8,16 +8,16 @@ struct GeneratePaymentOrderRequest: Encodable {
     private(set) var amount: Decimal = 0.0
     private(set) var operative: Operative
     private(set) var description: String
-    private(set) var service: String
+    private(set) var service: UUID
     private(set) var customerId: String? = nil
     private(set) var additional: String? = nil
     private(set) var secure: Bool? = nil
     private(set) var urlPost: String? = nil
     private(set) var urlOk: String? = nil
     private(set) var urlKo: String? = nil
-    private(set) var templateUUID: String? = nil
-    private(set) var dccTemplateUUID: String? = nil
-    private(set) var sourceUUID: String? = nil
+    private(set) var templateUUID: UUID? = nil
+    private(set) var dccTemplateUUID: UUID? = nil
+    private(set) var sourceUUID: UUID? = nil
     private(set) var extraData: OrderExtraData? = nil
 
 

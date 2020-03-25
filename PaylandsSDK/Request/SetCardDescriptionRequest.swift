@@ -5,7 +5,7 @@
 import Foundation
 
 struct SetCardDescriptionRequest: Encodable {
-    private(set) var sourceUUID: String
+    private(set) var sourceUUID: UUID
     private(set) var additional: String? = nil
 
 

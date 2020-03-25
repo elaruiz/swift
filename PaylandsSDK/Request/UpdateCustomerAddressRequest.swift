@@ -5,7 +5,7 @@
 import Foundation
 
 struct UpdateCustomerAddressRequest: Encodable {
-    private(set) var addressUUID: String
+    private(set) var addressUUID: UUID
     private(set) var externalId: String
     private(set) var address1: String
     private(set) var address2: String

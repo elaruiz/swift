@@ -5,6 +5,6 @@
 import Foundation
 
 struct CancelPaymentRequest: Encodable {
-    private(set) var orderUUID: String
+    private(set) var orderUUID: UUID
 
 }
