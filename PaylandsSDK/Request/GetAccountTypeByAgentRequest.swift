@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetAccountTypeByAgentRequest: Encodable {
-    private(set) var serviceUUID: UUID
+    private(set) var serviceUUID: String
     private(set) var payAgentCd: String
     private(set) var country: String
     private(set) var currency: String

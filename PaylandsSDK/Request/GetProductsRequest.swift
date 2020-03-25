@@ -4,11 +4,13 @@
 
 import Foundation
 
-struct GetPaymentAgentsRequest: Encodable {
-    private(set) var serviceUUID: UUID
+struct GetProductsRequest: Encodable {
+    private(set) var serviceUUID: String
+    private(set) var paymentTypeCd: String
 
 
     enum CodingKeys: String, CodingKey {
+        case paymentTypeCd
         case serviceUUID = "service_uuid"
 
     }

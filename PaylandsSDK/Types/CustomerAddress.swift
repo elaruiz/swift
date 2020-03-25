@@ -5,7 +5,7 @@
 import Foundation
 
 struct CustomerAddress: Codable {
-    private(set) var uuid: UUID
+    private(set) var uuid: String
     private(set) var address1: String
     private(set) var address2: String
     private(set) var address3: String
