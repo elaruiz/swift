@@ -28,7 +28,7 @@ class GetCardResponse: BaseResponse {
     }
 
     override func equals(_ rhs: BaseResponse) -> Bool {
-        if let rhs = rhs as? GetCardsResponse {
+        if let rhs = rhs as? GetCardResponse {
             return customer == rhs.customer &&
             card == rhs.card &&
             super.equals(rhs)

@@ -23,7 +23,7 @@ extension Account: Equatable  {
         a.accountType == b.accountType &&
         a.accountNumber == b.accountNumber
     }
-}	}
+}
 
 
 

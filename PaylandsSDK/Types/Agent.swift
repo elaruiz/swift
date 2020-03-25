@@ -26,5 +26,5 @@ extension Agent: Equatable  {
         a.state == b.state &&
         a.country == b.country
     }
-}	}
+}	
 
