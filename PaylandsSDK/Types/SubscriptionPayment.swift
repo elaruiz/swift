@@ -7,13 +7,13 @@ import Foundation
 struct SubscriptionPayment: Codable {
     private(set) var id: String
     private(set) var status: PaymentStatus
-    private(set) var paymentDate: CustomDate<DateSimple>
+    private(set) var paymentDate: String
     private(set) var paymentNumber: Int
     private(set) var attempt: Int
     private(set) var amount: Double
     private(set) var paymentDetails: String?
-    private(set) var createdAt: CustomDate<DateTime>
-    private(set) var updatedAt: CustomDate<DateTime>
+    private(set) var createdAt: String
+    private(set) var updatedAt: String
 
 
     enum CodingKeys: String, CodingKey {

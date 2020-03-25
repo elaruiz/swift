@@ -7,7 +7,7 @@ import Foundation
 struct CreateMotoCampaignRequest: Encodable {
     private(set) var subject: String
     private(set) var description: String
-    private(set) var serviceUUID: UUID
+    private(set) var serviceUUID: String
     private(set) var type: MoToCampaignType
     private(set) var expiresAt: Date
     private(set) var file: String

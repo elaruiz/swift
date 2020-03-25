@@ -25,4 +25,13 @@ class CreateMotoCampaignResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+    
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? CreateMotoCampaignResponse {
+            return detail == rhs.detail &&
+            payments == rhs.payments && super.equals(rhs)
+        }
+        return false
+    }
 }
+

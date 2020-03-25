@@ -6,8 +6,8 @@ import Foundation
 
 struct Order: Codable {
     private(set) var uuid: UUID
-    private(set) var created: CustomDate<DateTimeFull>
-    private(set) var createdFromClientTimezone: CustomDate<DateTimeFull>
+    private(set) var created: String
+    private(set) var createdFromClientTimezone: String
     private(set) var amount: Double
     private(set) var currency: String
     private(set) var paid: Bool

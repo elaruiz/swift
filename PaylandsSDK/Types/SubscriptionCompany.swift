@@ -7,8 +7,8 @@ import Foundation
 struct SubscriptionCompany: Codable {
      private(set) var name: String
      private(set) var id: String
-     private(set) var createdAt: CustomDate<DateTime>
-     private(set) var updatedAt: CustomDate<DateTime>
+     private(set) var createdAt: String
+     private(set) var updatedAt: String
 
 
     enum CodingKeys: String, CodingKey {

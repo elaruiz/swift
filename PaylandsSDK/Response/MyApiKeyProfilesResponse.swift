@@ -21,11 +21,11 @@ class MyApiKeyProfilesResponse: BaseResponse {
         try profiles = container.decode([String].self, forKey: .profiles)
         try super.init(from: decoder)
     }
-}
-
-extension MyApiKeyProfilesResponse  {
-    static func == (a: MyApiKeyProfilesResponse, b: MyApiKeyProfilesResponse) -> Bool {
-        return (a as BaseResponse) == (b as BaseResponse) &&
-        a.profiles == b.profiles
+    
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? MyApiKeyProfilesResponse {
+            return profiles == rhs.profiles && super.equals(rhs)
+        }
+        return false
     }
 }

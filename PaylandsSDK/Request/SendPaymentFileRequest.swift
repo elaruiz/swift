@@ -19,7 +19,7 @@ struct SendPaymentFileRequest: Encodable {
         try container.encode(filename, forKey: .filename)
         try container.encode(data, forKey: .data)
         if (self.executeAt != nil) {
-            let dateString = DateSimple.dateFormatter.string(from: self.executeAt!)
+            let dateString = DateTime.dateFormatter.string(from: self.executeAt!)
             try container.encode(dateString, forKey: .executeAt)
         }
     }

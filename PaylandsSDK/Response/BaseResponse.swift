@@ -27,12 +27,17 @@ class BaseResponse: Decodable {
         try currentTime = container.decodeIfPresent(String.self, forKey: .currentTime)
 
     }
+    
+    func equals(_ b: BaseResponse) -> Bool {
+        return message == b.message &&
+        code == b.code &&
+        currentTime == b.currentTime
+    }
 }
 
 extension BaseResponse: Equatable {
+    
     static func == (a: BaseResponse, b: BaseResponse) -> Bool {
-        return a.message == b.message &&
-        a.code == b.code &&
-        a.currentTime == b.currentTime
+        return a.equals(b)
     }
 }

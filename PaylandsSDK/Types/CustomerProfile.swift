@@ -16,12 +16,12 @@ struct CustomerProfile: Codable {
     private(set) var homePhone: Phone?
     private(set) var workPhone: Phone?
     private(set) var mobilePhone: Phone?
-    private(set) var birthdate: CustomDate<DateSimple>?
+    private(set) var birthdate: String?
     private(set) var sourceOfFunds: String?
     private(set) var occupation: String?
     private(set) var socialSecurityNumber: String?
-    private(set) var createdAt: CustomDate<DateTime>
-    private(set) var updatedAt: CustomDate<DateTime>
+    private(set) var createdAt: String
+    private(set) var updatedAt: String
 
     enum CodingKeys: String, CodingKey {
         case email, phone, birthdate, occupation

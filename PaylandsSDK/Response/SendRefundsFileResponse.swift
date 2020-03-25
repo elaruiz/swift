@@ -7,7 +7,7 @@ import Foundation
 class SendRefundsFileResponse: BaseResponse {
     private(set) var errors: [BatchError]
 
-    init(message: String, code: Int, currentTime: String? = nil, errors: [BatchError]) {
+    init(message: String, code: Int, currentTime: String? = nil, errors: [BatchError] = [BatchError]()) {
         self.errors = errors
         super.init(message: message, code: code, currentTime: currentTime)
     }
@@ -21,5 +21,12 @@ class SendRefundsFileResponse: BaseResponse {
         try errors = container.decode([BatchError].self, forKey: .errors)
         try super.init(from: decoder)
 
+    }
+    
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? SendRefundsFileResponse {
+            return errors == rhs.errors && super.equals(rhs)
+        }
+        return false
     }
 }

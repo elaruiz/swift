@@ -9,8 +9,8 @@ struct SubscriptionProduct: Codable {
      private(set) var externalId: String
      private(set) var sandbox: Bool
      private(set) var notificationUrl: String? = nil
-     private(set) var createdAt: CustomDate<DateTime>
-     private(set) var updatedAt: CustomDate<DateTime>
+     private(set) var createdAt: String
+     private(set) var updatedAt: String
 
 
     enum CodingKeys: String, CodingKey {

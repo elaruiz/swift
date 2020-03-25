@@ -13,8 +13,8 @@ struct SubscriptionPlan: Codable {
      private(set) var trialAvailable: Bool? = nil
      private(set) var intervalOffset: Int?
      private(set) var subscriptionIntervalOffset: SubscriptionInterval?
-     private(set) var createdAt: CustomDate<DateTime>
-     private(set) var updatedAt: CustomDate<DateTime>
+     private(set) var createdAt: String
+     private(set) var updatedAt: String
      private(set) var product: SubscriptionProduct
 
 

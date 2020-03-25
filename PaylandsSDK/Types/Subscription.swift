@@ -11,11 +11,11 @@ struct Subscription: Codable {
     private(set) var totalPayment: Double
     private(set) var totalPaymentCharged: Double
     private(set) var paymentAttemptsLimit: Int
-    private(set) var firstChargeDate: CustomDate<DateTime>
-    private(set) var nextChargeDate: CustomDate<DateTime>
+    private(set) var firstChargeDate: String
+    private(set) var nextChargeDate: String
     private(set) var additionalData: String
-    private(set) var createdAt: CustomDate<DateTime>
-    private(set) var updatedAt: CustomDate<DateTime>
+    private(set) var createdAt: String
+    private(set) var updatedAt: String
     private(set) var plan: SubscriptionPlan
     private(set) var payments: [SubscriptionPayment]
 
