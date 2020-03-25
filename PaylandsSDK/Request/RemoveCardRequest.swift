@@ -5,7 +5,7 @@
 import Foundation
 
 struct RemoveCardRequest: Encodable {
-    private(set) var cardUUID: UUID
+    private(set) var cardUUID: String
     private(set) var customerId: String
 
     enum CodingKeys: String, CodingKey {

@@ -5,7 +5,7 @@
 import Foundation
 
 struct GetPaymentAgentsRequest: Encodable {
-    private(set) var serviceUUID: UUID
+    private(set) var serviceUUID: String
 
 
     enum CodingKeys: String, CodingKey {
