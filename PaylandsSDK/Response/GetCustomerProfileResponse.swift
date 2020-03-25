@@ -22,4 +22,11 @@ class GetCustomerProfileResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetCustomerProfileResponse {
+            return profile == rhs.profile &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

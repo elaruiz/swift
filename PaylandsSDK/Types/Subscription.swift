@@ -34,4 +34,21 @@ struct Subscription: Codable {
         case payments = "payments"
     }
 }
+extension Subscription: Equatable  {
+    static func == (a: Subscription, b: Subscription) -> Bool {
+        return a.id == b.id &&
+                a.active == b.active &&
+                a.status == b.status &&
+                a.totalPayment == b.totalPayment &&
+                a.totalPaymentCharged == b.totalPaymentCharged &&
+                a.paymentAttemptsLimit == b.paymentAttemptsLimit &&
+                a.firstChargeDate == b.firstChargeDate &&
+                a.nextChargeDate == b.nextChargeDate &&
+                a.additionalData == b.additionalData &&
+                a.createdAt == b.createdAt &&
+                a.updatedAt == b.updatedAt &&
+                a.plan == b.plan &&
+                a.payments == b.payments
+    }
+}
 

@@ -22,4 +22,11 @@ class GetPaymentAgentsResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetPaymentAgentsResponse {
+            return agents == rhs.agents &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

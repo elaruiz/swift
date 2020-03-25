@@ -15,3 +15,9 @@ struct CardItem: Codable {
 
 }
 
+extension CardItem: Equatable  {
+    static func == (a: CardItem, b: CardItem) -> Bool {
+        return a.customer == b.customer &&
+        a.card == b.card
+    }
+}

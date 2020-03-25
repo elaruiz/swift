@@ -26,4 +26,11 @@ class CreateCustomerAddressResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? CreateCustomerAddressResponse {
+            return customer == rhs.customer &&
+            address == rhs.address && super.equals(rhs)
+        }
+        return false
+    }
 }

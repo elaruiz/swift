@@ -28,3 +28,15 @@ struct Product: Codable {
     }
 }
 
+extension Product: Equatable  {
+    static func == (a: Product, b: Product) -> Bool {
+        return a.serviceCode == b.serviceCode &&
+                a.originCountry == b.originCountry &&
+                a.originCurrency == b.originCurrency &&
+                a.destinationCountry == b.destinationCountry &&
+                a.destinationCurrency == b.destinationCurrency &&
+                a.paymentType == b.paymentType &&
+                a.directedTransaction == b.directedTransaction &&
+                a.electronicFunds == b.electronicFunds
+    }
+}

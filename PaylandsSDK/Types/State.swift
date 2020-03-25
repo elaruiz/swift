@@ -16,4 +16,10 @@ struct State: Codable {
     }
 
 }
-
+extension State: Equatable  {
+    static func == (a: State, b: State) -> Bool {
+        return a.state == b.state &&
+                a.code == b.code &&
+                a.country == b.country
+    }
+}

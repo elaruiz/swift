@@ -33,3 +33,18 @@ struct Branch: Codable {
     }
 }
 
+extension Branch: Equatable  {
+    static func == (a: Branch, b: Branch) -> Bool {
+        return a.branchCode == b.branchCode &&
+        a.paymentAgentCode == b.paymentAgentCode &&
+        a.paymentAgentRegion == b.paymentAgentRegion &&
+        a.paymentAgentCountry == b.paymentAgentCountry &&
+        a.paymentAgentState == b.paymentAgentState &&
+        a.paymentAgentCity == b.paymentAgentCity &&
+        a.paymentAgentAddress == b.paymentAgentAddress &&
+        a.paymentAgentZipCode == b.paymentAgentZipCode &&
+        a.paymentAgentPhone == b.paymentAgentPhone &&
+        a.branchDescription == b.branchDescription &&
+        a.paymentAgentSchedule == b.paymentAgentSchedule
+    }
+}

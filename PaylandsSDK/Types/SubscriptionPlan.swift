@@ -32,3 +32,18 @@ struct SubscriptionPlan: Codable {
 
 }
 
+extension SubscriptionPlan: Equatable  {
+    static func == (a: SubscriptionPlan, b: SubscriptionPlan) -> Bool {
+        return a.name == b.name &&
+                a.externalId == b.externalId &&
+                a.amount == b.amount &&
+                a.interval == b.interval &&
+                a.subscriptionInterval == b.subscriptionInterval &&
+                a.trialAvailable == b.trialAvailable &&
+                a.intervalOffset == b.intervalOffset &&
+                a.subscriptionIntervalOffset == b.subscriptionIntervalOffset &&
+                a.createdAt == b.createdAt &&
+                a.updatedAt == b.updatedAt &&
+                a.product == b.product
+    }
+}

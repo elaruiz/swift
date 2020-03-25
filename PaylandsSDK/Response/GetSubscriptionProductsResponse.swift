@@ -22,4 +22,12 @@ class GetSubscriptionProductsResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetSubscriptionProductsResponse {
+            return products  == rhs.products  &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

@@ -29,4 +29,14 @@ class SendOneStepPaymentResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? SendOneStepPaymentResponse {
+            return order == rhs.order &&
+            client == rhs.client &&
+            extraData == rhs.extraData &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

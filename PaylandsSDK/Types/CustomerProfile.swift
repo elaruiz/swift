@@ -41,4 +41,25 @@ struct CustomerProfile: Codable {
     }
 
 }
+extension CustomerProfile: Equatable  {
+    static func == (a: CustomerProfile, b: CustomerProfile) -> Bool {
+        return a.firstName == b.firstName &&
+                a.lastName == b.lastName &&
+                a.cardHolderName == b.cardHolderName &&
+                a.documentIdentificationIssuer == b.documentIdentificationIssuer &&
+                a.documentIdentificationType == b.documentIdentificationType &&
+                a.documentIdentificationNumber == b.documentIdentificationNumber &&
+                a.email == b.email &&
+                a.phone == b.phone &&
+                a.homePhone == b.homePhone &&
+                a.workPhone == b.workPhone &&
+                a.mobilePhone == b.mobilePhone &&
+                a.birthdate == b.birthdate &&
+                a.sourceOfFunds == b.sourceOfFunds &&
+                a.occupation == b.occupation &&
+                a.socialSecurityNumber == b.socialSecurityNumber &&
+                a.createdAt == b.createdAt &&
+                a.updatedAt == b.updatedAt
+    }
+}
 

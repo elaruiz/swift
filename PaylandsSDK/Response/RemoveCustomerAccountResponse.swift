@@ -22,4 +22,11 @@ class RemoveCustomerAccountResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? RemoveCustomerAccountResponse {
+            return customerAccount == rhs.customerAccount && super.equals(rhs)
+        }
+        return false
+    }
 }

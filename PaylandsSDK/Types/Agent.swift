@@ -19,3 +19,12 @@ struct Agent: Codable {
 
 }
 
+extension Agent: Equatable  {
+    static func == (a: Agent, b: Agent) -> Bool {
+        return a.region == b.region &&
+        a.branch == b.branch &&
+        a.state == b.state &&
+        a.country == b.country
+    }
+}	}
+

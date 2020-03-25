@@ -27,3 +27,16 @@ struct SubscriptionPayment: Codable {
 
 }
 
+extension SubscriptionPayment: Equatable  {
+    static func == (a: SubscriptionPayment, b: SubscriptionPayment) -> Bool {
+        return a.id == b.id &&
+                a.status == b.status &&
+                a.paymentDate == b.paymentDate &&
+                a.paymentNumber == b.paymentNumber &&
+                a.attempt == b.attempt &&
+                a.amount == b.amount &&
+                a.paymentDetails == b.paymentDetails &&
+                a.createdAt == b.createdAt &&
+                a.updatedAt == b.updatedAt
+    }
+}

@@ -22,4 +22,11 @@ class RemoveSubscriptionProductResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? RemoveSubscriptionProductResponse {
+            return deleted == rhs.deleted && super.equals(rhs)
+        }
+        return false
+    }
 }

@@ -22,4 +22,12 @@ class GetBranchesResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetBranchesResponse {
+            return branches == rhs.branches &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

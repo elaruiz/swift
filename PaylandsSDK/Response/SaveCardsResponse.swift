@@ -22,4 +22,11 @@ class SaveCardsResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? SaveCardsResponse {
+            return cards == rhs.cards && super.equals(rhs)
+        }
+        return false
+    }
 }

@@ -25,4 +25,13 @@ class GetOrdersResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetOrdersResponse {
+            return count == rhs.count &&
+            transactions == rhs.transactions &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

@@ -22,4 +22,12 @@ class GetStatesResponse: BaseResponse {
         try super.init(from: decoder)
 
     }
+
+    override func equals(_ rhs: BaseResponse) -> Bool {
+        if let rhs = rhs as? GetStatesResponse {
+            return states  == rhs.states  &&
+            super.equals(rhs)
+        }
+        return false
+    }
 }

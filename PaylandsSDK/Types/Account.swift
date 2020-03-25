@@ -17,5 +17,13 @@ struct Account: Codable {
 
 }
 
+extension Account: Equatable  {
+    static func == (a: Account, b: Account) -> Bool {
+        return a.uuid == b.uuid &&
+        a.accountType == b.accountType &&
+        a.accountNumber == b.accountNumber
+    }
+}	}
+
 
 
